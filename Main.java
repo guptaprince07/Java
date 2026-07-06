@@ -1,3 +1,4 @@
+import java.util.*;
 // // class Main{
 // //     public static void main(String[] args) {
 // //         int a=12;
@@ -73,25 +74,91 @@
 //     }
 // }
 
-import java.util.Scanner;
-class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter first number: ");
-        double num1 = sc.nextDouble();
-        System.out.print("Enter second number: ");
-        double num2 = sc.nextDouble();
-        double sum        = num1 + num2;
-        double difference = num1 - num2;
-        double product    = num1 * num2;
-        double quotient   = num1 / num2;
-        double remainder  = num1 % num2;
+// class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter first number: ");
+//         double num1 = sc.nextDouble();
+//         System.out.print("Enter second number: ");
+//         double num2 = sc.nextDouble();
+//         double sum        = num1 + num2;
+//         double difference = num1 - num2;
+//         double product    = num1 * num2;
+//         double quotient   = num1 / num2;
+//         double remainder  = num1 % num2;
         
-        System.out.println("(+):" + sum);
-        System.out.println("(-):" + difference);
-        System.out.println("(*):" + product);
-        System.out.println("(/):" + quotient);
-        System.out.println("(%): " + remainder);
-        sc.close();
-    }
-}
+//         System.out.println("(+):" + sum);
+//         System.out.println("(-):" + difference);
+//         System.out.println("(*):" + product);
+//         System.out.println("(/):" + quotient);
+//         System.out.println("(%): " + remainder);
+//         sc.close();
+//     }
+// }
+
+// class Main{
+//     public static void main(String args[]) {
+//         Scanner sc=new Scanner(System.in);
+//         int age=sc.nextInt();
+//         if(age>=18){
+//             System.out.println("You are eligible to vote");
+//         }
+//         else{
+//             System.out.println("You are not eligible to vote");
+//         }
+// }
+// }
+
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int no=sc.nextInt();
+//         if(no >0 && no<=10){
+//             System.out.println("range 0-10");
+//         }
+//         else if(no>10 && no<=20){
+//             System.out.println("range 11-20");
+//         }
+//         else if(no>20 && no<=30){
+//             System.out.println("range 21-30");
+//         }
+//         else if(no>30 && no<=40){
+//             System.out.println("range 31-40");
+//         }
+//         else if(no>40 && no<=50){
+//             System.out.println("range 41-50");
+//         }
+//     }
+// }
+
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int day=sc.nextInt();
+//         switch (day){
+//             case 1:
+//                 System.out.println("Monday");
+//                 break;
+//             case 2:
+//                 System.out.println("Tuesday");
+//                 break;
+//             case 3:
+//                 System.out.println("Wednesday");
+//                 break;
+//             case 4:
+//                 System.out.println("Thrusday");
+//                 break;
+//             case 5:
+//                 System.out.println("Friday");
+//                 break;
+//             case 6:
+//                 System.out.println("Saturday");
+//                 break;
+//             case 7:
+//                 System.out.println("Sunday");
+//                 break;
+//             default:
+//                 System.out.println("Enter valid day");
+//         }
+//     }
+// }
