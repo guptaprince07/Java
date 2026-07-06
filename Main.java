@@ -162,3 +162,39 @@ import java.util.*;
 //         }
 //     }
 // }
+
+// class Main{
+//     public static void main(String args[]){
+//         for(int i=0;i<=10;i++){
+//             System.out.println("Hello");
+//         }
+//     }
+// }
+
+// class Main{
+//     public static void main(String args[]){
+//         int n=2;
+//         for(int i=0;i<=10;i++){
+//             System.out.printf("%d X %d= %d\n",n,i,(i*n));
+//         }
+//     }
+// }
+
+// class Main{
+//     public static void main(String args[]){
+//         int i=100;
+//         while(i>0){
+//             System.out.println(i);
+//             i--;
+//         }
+//     }
+// }
+
+class Main{
+    public static void main(String args[]){
+        int i=9;
+        do{
+            System.out.println("Hello world");
+        }while(i>10);
+    }
+}
