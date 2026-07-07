@@ -190,11 +190,103 @@ import java.util.*;
 //     }
 // }
 
+// class Main{
+//     public static void main(String args[]){
+//         int i=9;
+//         do{
+//             System.out.println("Hello world");
+//         }while(i>10);
+//     }
+// }
+
+//simple calculator
+//multiplication table of 5
+
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter a here :");
+//         int a=sc.nextInt();
+//         System.out.print("Enter b here :");
+//         int b=sc.nextInt();
+//         System.out.print("Enter operation here :");
+//         String ch=sc.next();
+//         float divide=((float)a/b);
+//         switch (ch){
+//             case "+":
+//                 System.out.println("Sum is :"+(a+b));
+//                 break;
+//             case "-":
+//                 System.out.println("Difference is :"+(a-b));
+//                 break;
+//             case "*":
+//                 System.out.println("Product  is :"+(a*b));
+//                 break;
+//             case "/":
+//                 System.out.println("Divide is :"+divide);
+//                 break;
+//             default:
+//                 System.out.println("Enter correct operation ");
+//         }
+//         sc.close();
+//     }
+// }
+
+// class Main{
+//     public static void main(String args[]){
+//         for(int i=1;i<=10;i++){
+//             System.out.printf("%d X %d= %d\n",5,i,(i*5));
+//         }
+//     }
+// }
+
+// class Main{
+//     public static void sum(int a,int b){
+//         int sum=a+b;
+//         System.out.print(sum);
+//         }
+//         public static void main(String args[]){
+//             int a=15;
+//             int b=78;
+//             sum(a,b);
+//         }
+//     }
+
+// class Main{
+//     public static void fact(int n){
+//         int fact=1;
+//         for(int i=1;i<=n;i++){
+//             fact=fact*i;
+//         }
+//         System.out.print(fact);
+//     }
+//     public static void main(String args[]){
+//         int n=5;
+//         fact(n);
+//     }
+// }
+
+// class Main{
+//     public static void sum(int a,int b){
+//         int sum=a+b;
+//         System.out.print("The sum is: "+sum);
+//     }
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         sum(a,b);
+//     }
+// }
+
 class Main{
-    public static void main(String args[]){
-        int i=9;
-        do{
-            System.out.println("Hello world");
-        }while(i>10);
+    public static void mkc(int n){
+        for(int i=1;i<=n;i++){
+            System.out.printf(" %d College Walo ke MKC 100 baar !!!\n",i);
+        }
+    }
+    public static void main(String main[]){
+        int n=100;
+        mkc(n);
     }
 }
