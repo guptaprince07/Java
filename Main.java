@@ -279,14 +279,66 @@ import java.util.*;
 //     }
 // }
 
-class Main{
-    public static void mkc(int n){
-        for(int i=1;i<=n;i++){
-            System.out.printf(" %d College Walo ke MKC 100 baar !!!\n",i);
-        }
-    }
-    public static void main(String main[]){
-        int n=100;
-        mkc(n);
-    }
-}
+// class Main{
+//     public static void mkc(int n){
+//         for(int i=1;i<=n;i++){
+//             System.out.printf(" %d College Walo ke MKC 100 baar !!!\n",i);
+//         }
+//     }
+//     public static void main(String main[]){
+//         int n=100;
+//         mkc(n);
+//     }
+// }
+
+// class Main{
+//     public static void table(int n){
+//         for (int i=1;i<=10;i++){
+//             System.out.printf("%d X %d =%d \n",n,i,(i*n));
+//         }
+//     }
+//     public static void main(String args[]){
+//         int n=10;
+//         table(n);
+//     }
+// }
+
+// class Main{
+//     public static void even(int a){
+//         if(a%2==0)System.out.print("Even");
+//         else System.out.print("Odd");
+//     }
+//     public static void main(String args[]){
+//         int a=44;
+//         even(a);
+//     }
+// }
+
+// class Main{
+//     public static void bigger(int a,int b){
+//         if(a>b)System.out.print("A is bigger "+a);
+//         else System.out.print("B is bigger"+b);
+//     }
+//     public static void main(String args[]){
+//         int a=14;
+//         int b=20;
+//         bigger(a, b);   
+//     }
+// }
+
+// class Main{
+//     public static void first(String s){
+//         char firstChar=s.charAt(0);
+//         System.out.print(firstChar);
+//     }
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         first(s);
+//     }
+// }
+
+//Area of recatangle
+//area of circle
+//no is -ve or +ve
+//vol of cylinder
