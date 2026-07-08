@@ -416,12 +416,49 @@ import java.util.*;
 //     }
 // }
 
-class  Main{
-    public static void main(String args[]){
-     String name="name1";
-     String name1="name1";
+// class  Main{
+//     public static void main(String args[]){
+//      String name="name1";
+//      String name1="name1";//made by string literals
      
-     String name2=new String("name1");
-     String name3=new String("name1");
+//      String name2=new String("name1");
+//      String name3=new String("name1");
+
+//      System.out.println(name==name1); //checks memory reference if same or not
+//      System.out.println(name.equals(name1));//contents check karta ha
+     
+//      System.out.println(name2==name3);
+//      System.out.println(name2.equals(name3));
+//     }
+// }//new keyword se har baar new memory allocation hoga
+
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter 5 no's :");
+//         int []no=new int[5];
+//         for(int i=0;i<no.length;i++){
+//             no[i]=sc.nextInt();
+//         }
+//         for(int i=no.length-1;i>=0;i--){//reverse array
+//             System.out.println("reversed array is "+no[i]);
+//         }
+//     }
+// }
+
+//largest no in array
+//smallest no in array
+//sum of elements in array
+class Main{
+    public static void main(String args[]){
+        int sum=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter 5 nos: ");
+        int []nos=new int[5];
+        for(int i=0;i<nos.length;i++){
+            nos[i]=sc.nextInt();
+            sum=sum+nos[i];
+        }
+        System.out.print("the sum is: "+sum);
     }
 }
