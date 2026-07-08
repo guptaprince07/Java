@@ -1,84 +1,84 @@
 import java.util.*;
-class practice{
-    public static void main(String args[]){
-        System.out.println("Hello World");// println next line ke lyee 
-        System.out.print("Hello World\n");// simple print me \n daldo 
-        System.out.print("Hello World");// print se aise he print hoga agar multiple statements execute kare to
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         System.out.println("Hello World");// println next line ke lyee 
+//         System.out.print("Hello World\n");// simple print me \n daldo 
+//         System.out.print("Hello World");// print se aise he print hoga agar multiple statements execute kare to
+//     }
+// }
 
-class practice{
-    public static void main(String args[]){
-        System.out.println("*");
-        System.out.println("* *");
-        System.out.println("* * *");
-        System.out.println("* * * *");
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         System.out.println("*");
+//         System.out.println("* *");
+//         System.out.println("* * *");
+//         System.out.println("* * * *");
+//     }
+// }
 
-class practice{
-    public static void main(String args[]){
-        String name="Rober Downey Jr.";
-        int a=14;
-        int b=19;
-        int mul=a*b;
-        a=0;//yha a ke value edit bhi kar sakte koi error nhi atta 
-        double price=11.19;
-        int sum=a+b;
-        System.out.println(mul);
-        System.out.println("The sum is:"+sum);
-        System.out.println("The real Iron Man is:"+name);
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         String name="Rober Downey Jr.";
+//         int a=14;
+//         int b=19;
+//         int mul=a*b;
+//         a=0;//yha a ke value edit bhi kar sakte koi error nhi atta 
+//         double price=11.19;
+//         int sum=a+b;
+//         System.out.println(mul);
+//         System.out.println("The sum is:"+sum);
+//         System.out.println("The real Iron Man is:"+name);
+//     }
+// }
 
-class practice{
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        String name=sc.nextLine();//next space ke baad wala include nhi karta
-        //nextLine() iss space ke baad wala bhi include hoga
-        System.out.println(name);
-    }
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         String name=sc.nextLine();//next space ke baad wala include nhi karta
+//         //nextLine() iss space ke baad wala bhi include hoga
+//         System.out.println(name);
+//     }
 
-}
+// }
 
-class practice{
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter a here:");
-        int a= sc.nextInt();
-        System.out.print("Enter b here: ");
-        int b= sc.nextInt();
-        int sum=a+b;
-        System.out.println(sum);
-        sc.close();
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter a here:");
+//         int a= sc.nextInt();
+//         System.out.print("Enter b here: ");
+//         int b= sc.nextInt();
+//         int sum=a+b;
+//         System.out.println(sum);
+//         sc.close();
+//     }
+// }
 
-class practice{
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        sc.nextLine();
-        String name=sc.nextLine();
-        System.out.println(a);
-        System.out.println(name);
-        sc.close();
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         sc.nextLine();
+//         String name=sc.nextLine();
+//         System.out.println(a);
+//         System.out.println(name);
+//         sc.close();
+//     }
+// }
 
-class practice{
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int age=sc.nextInt();
-        //Next double me upto 15 places decimal ayega but float me sirf 7 places tak
-        Double salary=sc.nextDouble();
-        String name=sc.next();
-        System.out.println("Age is: "+age);
-        System.out.println("Salary is: "+salary);
-        System.out.println("The name is: "+name);
-        sc.close();
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int age=sc.nextInt();
+//         //Next double me upto 15 places decimal ayega but float me sirf 7 places tak
+//         Double salary=sc.nextDouble();
+//         String name=sc.next();
+//         System.out.println("Age is: "+age);
+//         System.out.println("Salary is: "+salary);
+//         System.out.println("The name is: "+name);
+//         sc.close();
+//     }
+// }
 
 //Conditional Statement
 
@@ -370,6 +370,30 @@ class practice{
 //Rotated half pyramid
 // class practice{
 //     public static void main(String args[]){
-        
+//         int n=4;
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=n-i;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=i;k++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
 //     }
 // }
+
+class practice{
+    public static void main(String args[]){
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
