@@ -398,20 +398,30 @@ import java.util.*;
 //     }
 // }
 
-class Main{
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int []marks= new int[5];
+//         System.out.print("enter 5 marks: ");
+//         for(int i=0;i<marks.length;i++){
+//             marks[i]=sc.nextInt();
+//         }
+//         int sum=0;
+//         int average=0;
+//         for(int i=0;i<marks.length;i++){
+//             sum=sum+marks[i];
+//             average=sum/5;
+//         }
+//         System.out.print("Average is:"+average);
+//     }
+// }
+
+class  Main{
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int []marks= new int[5];
-        System.out.print("enter 5 marks: ");
-        for(int i=0;i<marks.length;i++){
-            marks[i]=sc.nextInt();
-        }
-        int sum=0;
-        int average=0;
-        for(int i=0;i<marks.length;i++){
-            sum=sum+marks[i];
-            average=sum/5;
-        }
-        System.out.print("Average is:"+average);
+     String name="name1";
+     String name1="name1";
+     
+     String name2=new String("name1");
+     String name3=new String("name1");
     }
 }
