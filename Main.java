@@ -373,14 +373,45 @@ import java.util.*;
 //     }
 // }
 //vol of cylinder
+// class Main{
+//     public static void vol(float r,float h){
+//         float vol=3.14f*r*r*h;
+//         System.out.print(vol);
+//     }
+//     public static void main(String args[]){
+//         float r=14.78f;
+//         float h=23.1f;
+//         vol(r,h);
+//     }
+// }
+
+//Array
+// class Main{
+//     public static void main(String args[]){
+//         String []name=new String[5];
+//         name[0]="Name 1";
+//         name[1]="Name 2";
+//         name[2]="Name 3";
+//         name[3]="Name 4";
+//         name[4]="Name 5";
+//         for(int i=0;i<name.length;i++)System.out.println(name[i]);
+//     }
+// }
+
 class Main{
-    public static void vol(float r,float h){
-        float vol=3.14f*r*r*h;
-        System.out.print(vol);
-    }
     public static void main(String args[]){
-        float r=14.78f;
-        float h=23.1f;
-        vol(r,h);
+        Scanner sc=new Scanner(System.in);
+        int []marks= new int[5];
+        System.out.print("enter 5 marks: ");
+        for(int i=0;i<marks.length;i++){
+            marks[i]=sc.nextInt();
+        }
+        int sum=0;
+        int average=0;
+        for(int i=0;i<marks.length;i++){
+            sum=sum+marks[i];
+            average=sum/5;
+        }
+        System.out.print("Average is:"+average);
     }
 }
