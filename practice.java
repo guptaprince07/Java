@@ -548,21 +548,35 @@ import java.util.*;
 // }
 
 //pallindrome
-class practice{
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("enter no here:");
+//         int num=sc.nextInt();
+//         int rev=0;
+//         int r=0;
+//         int temp=num;
+//         while(num>0){
+//             r=num%10;
+//             rev=rev*10+r;
+//             num=num/10;
+//         }
+//         if(temp==rev)System.out.println("Number is pallindrome");
+//         else System.out.println("Not a pallindrome");
+//     sc.close();
+//     }
+// }
+
+class practice {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("enter no here:");
-        int num=sc.nextInt();
-        int rev=0;
-        int r=0;
-        int temp=num;
-        while(num>0){
-            r=num%10;
-            rev=rev*10+r;
-            num=num/10;
+        int n = 5; 
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");}
+            System.out.println();
         }
-        if(temp==rev)System.out.println("Number is pallindrome");
-        else System.out.println("Not a pallindrome");
-    sc.close();
     }
 }
