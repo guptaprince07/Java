@@ -442,16 +442,46 @@ import java.util.*;
 // }
 
 //0-1 Triangle
+// class practice{
+//     public static void main(String args[]){
+//         int n=5;
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=i;j++){
+//                 int sum=i+j;
+//                 if(sum%2==0)System.out.print("1");
+//                 else System.out.print("0");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+//Array 
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int []marks=new int[10];
+//         System.out.print("Enter 10 marks here: ");
+//         for(int i=0;i<marks.length;i++){
+//             marks[i]=sc.nextInt();
+//         }        
+//         for(int i=0;i<=marks.length;i++){
+//             System.out.println(" "+marks[i]);
+//         }
+//     }
+// }
+
 class practice{
     public static void main(String args[]){
-        int n=5;
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-                int sum=i+j;
-                if(sum%2==0)System.out.print("1");
-                else System.out.print("0");
-            }
-            System.out.println();
+        Scanner sc=new Scanner(System.in);
+        double []salary=new double[5];
+        System.out.print("Enter salary for 5 employees: ");
+        for(int i=0;i<salary.length;i++){
+            salary[i]=sc.nextDouble();
+        }
+        System.out.print("Salary of 5 employees are:");
+        for(int i=0;i<salary.length;i++){
+            System.out.println(salary[i]);
         }
     }
 }
