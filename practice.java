@@ -471,17 +471,98 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         double []salary=new double[5];
+//         System.out.print("Enter salary for 5 employees: ");
+//         for(int i=0;i<salary.length;i++){
+//             salary[i]=sc.nextDouble();
+//         }
+//         System.out.print("Salary of 5 employees are:");
+//         for(int i=0;i<salary.length;i++){
+//             System.out.println(salary[i]);
+//         }
+//     }
+// }
+
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String []name=new String[5];
+//         System.out.print("Enter 5 names: ");
+//         for(int i=0;i<name.length;i++){
+//             name[i]=sc.nextLine();
+//         }
+//         System.out.println("the 5 names are:");
+//         for(int i=0;i<name.length;i++){
+//             System.out.println(name[i]);
+//         }
+//     }
+// }
+
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int []num=new int[10];
+//         int sum=0;
+//         System.out.print("Enter 10 numbers here: ");
+//         for(int i=0;i<num.length;i++){
+//             num[i]=sc.nextInt();
+//             sum=sum+num[i];
+//         }
+//         System.out.print("the sum of nums is: ");
+//         System.out.print(sum);
+//     }
+// }
+
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int []rev=new int[6];
+//         System.out.print("Enter 6 nos here: ");
+//         for(int i=0;i<rev.length;i++){
+//             rev[i]=sc.nextInt();
+//         }
+//         System.out.println("revered array is:");
+//         for(int i=rev.length-1;i>0;i--){
+//             System.out.println(rev[i]);
+//         }
+//     }
+// }
+
+//rev number
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int num=sc.nextInt();
+//         int rev=0;
+//         int r=0;
+//         while(num>0){
+//             r=num%10;
+//             rev=rev*10+r;
+//             num=num/10;
+//         }
+//         System.out.println(rev);
+//     }
+// }
+
+//pallindrome
 class practice{
-    public static void main(String args[]){
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        double []salary=new double[5];
-        System.out.print("Enter salary for 5 employees: ");
-        for(int i=0;i<salary.length;i++){
-            salary[i]=sc.nextDouble();
+        System.out.print("enter no here:");
+        int num=sc.nextInt();
+        int rev=0;
+        int r=0;
+        int temp=num;
+        while(num>0){
+            r=num%10;
+            rev=rev*10+r;
+            num=num/10;
         }
-        System.out.print("Salary of 5 employees are:");
-        for(int i=0;i<salary.length;i++){
-            System.out.println(salary[i]);
-        }
+        if(temp==rev)System.out.println("Number is pallindrome");
+        else System.out.println("Not a pallindrome");
+    sc.close();
     }
 }
