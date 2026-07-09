@@ -449,16 +449,40 @@ import java.util.*;
 //largest no in array
 //smallest no in array
 //sum of elements in array
+// class Main{
+//     public static void main(String args[]){
+//         int sum=0;
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter 5 nos: ");
+//         int []nos=new int[5];
+//         for(int i=0;i<nos.length;i++){
+//             nos[i]=sc.nextInt();
+//             sum=sum+nos[i];
+//         }
+//         System.out.print("the sum is: "+sum);
+//     }
+// }
+
+// class Main{
+//     public static void main(String args[]){
+//         int n=5;
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
 class Main{
     public static void main(String args[]){
-        int sum=0;
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter 5 nos: ");
-        int []nos=new int[5];
-        for(int i=0;i<nos.length;i++){
-            nos[i]=sc.nextInt();
-            sum=sum+nos[i];
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
         }
-        System.out.print("the sum is: "+sum);
     }
 }
