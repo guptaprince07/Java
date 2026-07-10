@@ -582,14 +582,44 @@ import java.util.*;
 // }
 
 //Functions
+// class practice{
+//     public static void name(String name){
+//     System.out.println("Your name is: "+name);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter your name here: ");
+//         String name=sc.nextLine();
+//         name(name);
+//     }
+// }
+
+// class practice{
+//     public static void sum(int a,int b) {
+//         int sum=a+b;
+//         System.out.printf("The sum of %d and %d is: %d",a,b,sum);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("enter two numbers here: ");
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         sum(a,b);
+//         sc.close();
+//     }
+// }
+
 class practice{
-    public static void name(String name){
-    System.out.println("Your name is: "+name);
+    public static void mul(int a,int b) {
+        int mul=a*b;
+        System.out.printf("The mul of %d and %d is: %d",a,b,mul);
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter your name here: ");
-        String name=sc.nextLine();
-        name(name);
+        System.out.print("enter two numbers here: ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        mul(a,b);
+        sc.close();
     }
 }
