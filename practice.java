@@ -609,17 +609,54 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void mul(int a,int b) {
+//         int mul=a*b;
+//         System.out.printf("The mul of %d and %d is: %d",a,b,mul);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("enter two numbers here: ");
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         mul(a,b);
+//         sc.close();
+//     }
+// }
+
+// class practice{
+//     public static void fact(int n){
+//         int fact=1;
+//         if(n<0)System.out.print("No factorial for negative numbers");
+//         else if(n==0)System.out.print(fact);
+//         else{
+//         for(int i=1;i<=n;i++){
+//             fact=fact*i;
+//         }
+//         System.out.print("factorial is: "+fact);}
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("enter no here: ");
+//         int n=sc.nextInt();
+//         fact(n);
+//         sc.close();
+//     }
+// }
+
 class practice{
-    public static void mul(int a,int b) {
-        int mul=a*b;
-        System.out.printf("The mul of %d and %d is: %d",a,b,mul);
+    public static void avg(int a,int b,int c) {
+        int sum=a+b+c;
+        double avg=(float)sum/3;
+        System.out.print("The avg is: "+avg);
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.print("enter two numbers here: ");
+        System.out.print("enter three nos: ");
         int a=sc.nextInt();
         int b=sc.nextInt();
-        mul(a,b);
+        int c=sc.nextInt();
+        avg(a,b,c);
         sc.close();
     }
 }
