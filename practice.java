@@ -644,19 +644,20 @@ import java.util.*;
 //     }
 // }
 
-class practice{
-    public static void avg(int a,int b,int c) {
-        int sum=a+b+c;
-        double avg=(float)sum/3;
-        System.out.print("The avg is: "+avg);
-    }
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("enter three nos: ");
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int c=sc.nextInt();
-        avg(a,b,c);
-        sc.close();
-    }
-}
+// class practice{
+//     public static void avg(int a,int b,int c) {
+//         int sum=a+b+c;
+//         double avg=(float)sum/3;
+//         System.out.print("The avg is: "+avg);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("enter three nos: ");
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         int c=sc.nextInt();
+//         avg(a,b,c);
+//         sc.close();
+//     }
+// }
+
