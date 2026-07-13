@@ -662,17 +662,51 @@ import java.util.*;
 // }
 
 //Array
+// class practice{
+//     public static void main(String args[]){
+//         int []marks=new int [5];
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter 5 marks here: ");
+//         for(int i=0;i<marks.length;i++){
+//             marks[i]=sc.nextInt();
+//         }
+//         System.out.print("The marks are: ");
+//         for(int i=0;i<marks.length;i++){
+//              System.out.println(marks[i]);
+//         }
+//     }
+// }
+
+// class practice{
+//     public static void main(String args[]){
+//         int []marks=new int [5];
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter 5 marks here: ");
+//         for(int i=0;i<marks.length;i++){
+//             marks[i]=sc.nextInt();
+//         }
+//         System.out.print("The marks in reversed order are: ");
+//         for(int i=marks.length-1;i>=0;i--){
+//              System.out.println(marks[i]);
+//         }
+//     }
+// }
+
+//search array index
 class practice{
     public static void main(String args[]){
-        int []marks=new int [5];
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter 5 marks here: ");
-        for(int i=0;i<marks.length;i++){
-            marks[i]=sc.nextInt();
+        int []no=new int[5];
+        System.out.print("Enter 5 numbers: ");
+        for(int i=0;i<no.length;i++){
+            no[i]=sc.nextInt();
         }
-        System.out.print("The marks are: ");
-        for(int i=0;i<marks.length;i++){
-             System.out.println(marks[i]);
-        }
+        System.out.print("enter key here: ");
+        int key=sc.nextInt();
+        for(int i=0;i<no.length;i++){
+        if(no[i]==key){
+                System.out.print("Key is at index "+i);
+            }
     }
+}
 }
