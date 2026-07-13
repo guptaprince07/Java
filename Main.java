@@ -553,31 +553,56 @@ import java.util.*;
 
 //Classes and objects
 //class
-class Student{
-    String name;
-    int age;
-    int rollno;
+// class Student{
+//     String name;
+//     int age;
+//     int rollno;
+//     void display(){
+//         System.out.println("Name: "+name);
+//         System.out.println("Age :"+age);
+//         System.out.println("Roll no: "+rollno);
+//         System.out.println();
+//     }
+// }
+// //object
+// class Main{
+//     public static void main(String args[]){
+//         Student s1=new Student();
+// Student s2=new Student();
+// s1.name="ABC";
+// s1.age=19;
+// s1.rollno=40;
+// s2.name="PS";
+// s2.age=18;
+// s2.rollno=33;
+// s1.display();
+// s2.display();
+//     }
+// }
+//string empty value null all other =0
+
+class result{
+    int marks1;
+    int marks2;
+    int marks3;
     void display(){
-        System.out.println("Name: "+name);
-        System.out.println("Age :"+age);
-        System.out.println("Roll no: "+rollno);
+        double avg=(marks1+marks2+marks3)/3.0;
+        System.out.println("the average is: "+avg);
         System.out.println();
     }
 }
-//object
 class Main{
-    public static void main(String args[]){
-        Student s1=new Student();
-Student s2=new Student();
-s1.name="ABC";
-s1.age=19;
-s1.rollno=40;
-s2.name="PS";
-s2.age=18;
-s2.rollno=33;
-s1.display();
-s2.display();
+    public static void main(String[] args) {
+        result r1=new result();
+        result r2=new result();
+
+        r1.marks1=88;
+        r1.marks2=98;
+        r1.marks3=75;
+        r1.display();
+        r2.marks1=79;
+        r2.marks2=89;
+        r2.marks3=99;
+        r2.display();
     }
 }
-
-
