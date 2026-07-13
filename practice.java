@@ -730,21 +730,41 @@ import java.util.*;
 // }
 
 //min in array
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int []arr=new int[6];
+        
+//         System.out.print("enter 6 numbers here: ");
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int min=arr[0];
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]<min){
+//                 min=arr[i];
+//             }
+//         }
+//         System.out.println("the minimum element is:"+min);
+//     }
+// }
+
+//check if array is in ascending order or not
 class practice{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int []arr=new int[6];
-        
-        System.out.print("enter 6 numbers here: ");
-        for(int i=0;i<arr.length;i++){
-            arr[i]=sc.nextInt();
+        int []num=new int[5];
+        System.out.println("enter 5 numbers here: ");
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
         }
-        int min=arr[0];
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]<min){
-                min=arr[i];
+        boolean ass=true;
+        for(int i=0;i<num.length-1;i++){
+            if(num[i]>num[i+1]){
+                ass=false;
             }
         }
-        System.out.println("the minimum element is:"+min);
+        if(ass)System.out.println("Sorted in asecending order");
+        else System.out.println("Not in asecending order");
     }
 }
