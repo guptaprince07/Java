@@ -750,21 +750,63 @@ import java.util.*;
 // }
 
 //check if array is in ascending order or not
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int []num=new int[5];
+//         System.out.println("enter 5 numbers here: ");
+//         for(int i=0;i<num.length;i++){
+//             num[i]=sc.nextInt();
+//         }
+//         boolean ass=true;
+//         for(int i=0;i<num.length-1;i++){
+//             if(num[i]>num[i+1]){
+//                 ass=false;
+//             }
+//         }
+//         if(ass)System.out.println("Sorted in asecending order");
+//         else System.out.println("Not in asecending order");
+//     }
+// }
+
+//2-D Array
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int [][]array=new int [3][5];
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<5;j++){
+//                 array[i][j]=sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<5;j++){
+//                 System.out.print(array[i][j] + " ");
+//             }
+//             System.out.println();
+//     }
+// }
+// }
+
 class practice{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int []num=new int[5];
-        System.out.println("enter 5 numbers here: ");
-        for(int i=0;i<num.length;i++){
-            num[i]=sc.nextInt();
-        }
-        boolean ass=true;
-        for(int i=0;i<num.length-1;i++){
-            if(num[i]>num[i+1]){
-                ass=false;
+        System.out.println("enter array elements");
+        int [][]num=new int[2][4];
+        for(int i=0;i<2;i++){
+            for(int j=0;j<4;j++){
+                num[i][j]=sc.nextInt();
             }
         }
-        if(ass)System.out.println("Sorted in asecending order");
-        else System.out.println("Not in asecending order");
+        System.out.print("enter key here: ");
+        int key=sc.nextInt();
+        for(int i=0;i<2;i++){
+            for(int j=0;j<4;j++){
+                if(num[i][j]==key){
+                    System.out.printf("the index is:[%d][%d]",i,j);
+                }
+            }
+        }
+        sc.close();
     }
 }
