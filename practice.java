@@ -693,20 +693,58 @@ import java.util.*;
 // }
 
 //search array index
+//LINEAR SEARCH
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int []no=new int[5];
+//         System.out.print("Enter 5 numbers: ");
+//         for(int i=0;i<no.length;i++){
+//             no[i]=sc.nextInt();
+//         }
+//         System.out.print("enter key here: ");
+//         int key=sc.nextInt();
+//         for(int i=0;i<no.length;i++){
+//         if(no[i]==key){
+//                 System.out.print("Key is at index "+i);
+//             }
+//     }
+// }
+// }
+
+//max in array
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int []arr=new int[6];
+//         int max=arr[0];
+//         System.out.print("enter 6 numbers here: ");
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=sc.nextInt();
+//             if(arr[i]>max){
+//                 max=arr[i];
+//             }
+//         }
+//         System.out.println("the maximum element is:"+max);
+//     }
+// }
+
+//min in array
 class practice{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int []no=new int[5];
-        System.out.print("Enter 5 numbers: ");
-        for(int i=0;i<no.length;i++){
-            no[i]=sc.nextInt();
+        int []arr=new int[6];
+        
+        System.out.print("enter 6 numbers here: ");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
         }
-        System.out.print("enter key here: ");
-        int key=sc.nextInt();
-        for(int i=0;i<no.length;i++){
-        if(no[i]==key){
-                System.out.print("Key is at index "+i);
+        int min=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<min){
+                min=arr[i];
             }
+        }
+        System.out.println("the minimum element is:"+min);
     }
-}
 }
