@@ -550,3 +550,34 @@ import java.util.*;
 //         System.out.println(b);
 //     }
 // }
+
+//Classes and objects
+//class
+class Student{
+    String name;
+    int age;
+    int rollno;
+    void display(){
+        System.out.println("Name: "+name);
+        System.out.println("Age :"+age);
+        System.out.println("Roll no: "+rollno);
+        System.out.println();
+    }
+}
+//object
+class Main{
+    public static void main(String args[]){
+        Student s1=new Student();
+Student s2=new Student();
+s1.name="ABC";
+s1.age=19;
+s1.rollno=40;
+s2.name="PS";
+s2.age=18;
+s2.rollno=33;
+s1.display();
+s2.display();
+    }
+}
+
+
