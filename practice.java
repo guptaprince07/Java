@@ -661,3 +661,18 @@ import java.util.*;
 //     }
 // }
 
+//Array
+class practice{
+    public static void main(String args[]){
+        int []marks=new int [5];
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter 5 marks here: ");
+        for(int i=0;i<marks.length;i++){
+            marks[i]=sc.nextInt();
+        }
+        System.out.print("The marks are: ");
+        for(int i=0;i<marks.length;i++){
+             System.out.println(marks[i]);
+        }
+    }
+}
