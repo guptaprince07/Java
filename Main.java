@@ -682,19 +682,46 @@ import java.util.*;
 // }
 
 //create new class constructor and print value
-class Car {
-    String brand;
-    int year;
-    public Car(String carBrand, int carYear) {
-        brand = carBrand; 
-        year = carYear;
+// class Car {
+//     String brand;
+//     int year;
+//     public Car(String carBrand, int carYear) {
+//         brand = carBrand; 
+//         year = carYear;
+//     }
+//     public void displayDetails() {
+//         System.out.println("Car Brand: " + brand);
+//         System.out.println("Car Year: " + year);
+//     }
+//     public static void main(String[] args) {
+//         Car myCar = new Car("Toyota", 2026);
+//         myCar.displayDetails();
+//     }
+// }
+
+//create a class 2 diff method one with this keyword and other without this keyword
+class Student {
+    String name;
+    int age;
+    void detailsWithoutThis(String studentName, int studentAge) {
+        name = studentName; 
+        age = studentAge;
     }
-    public void displayDetails() {
-        System.out.println("Car Brand: " + brand);
-        System.out.println("Car Year: " + year);
+    void detailsWithThis(String name, int age) {
+        this.name = name; 
+        this.age = age;
     }
+    void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+class Main {
     public static void main(String[] args) {
-        Car myCar = new Car("Toyota", 2026);
-        myCar.displayDetails();
+        Student s1 = new Student();
+        s1.detailsWithoutThis("Alice", 20);
+        s1.display();
+        Student s2 = new Student();
+        s2.detailsWithThis("Bob", 22);
+        s2.display(); // Prints: Name: Bob, Age: 22
     }
 }
