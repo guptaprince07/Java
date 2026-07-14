@@ -581,28 +581,31 @@ import java.util.*;
 // }
 //string empty value null all other =0
 
-class result{
-    int marks1;
-    int marks2;
-    int marks3;
-    void display(){
-        double avg=(marks1+marks2+marks3)/3.0;
-        System.out.println("the average is: "+avg);
-        System.out.println();
-    }
-}
-class Main{
-    public static void main(String[] args) {
-        result r1=new result();
-        result r2=new result();
+// class result{
+//     int marks1;
+//     int marks2;
+//     int marks3;
+//     void display(){
+//         double avg=(marks1+marks2+marks3)/3.0;
+//         System.out.println("the average is: "+avg);
+//         System.out.println();
+//     }
+// }
+// class Main{
+//     public static void main(String[] args) {
+//         result r1=new result();
+//         result r2=new result();
 
-        r1.marks1=88;
-        r1.marks2=98;
-        r1.marks3=75;
-        r1.display();
-        r2.marks1=79;
-        r2.marks2=89;
-        r2.marks3=99;
-        r2.display();
-    }
-}
+//         r1.marks1=88;
+//         r1.marks2=98;
+//         r1.marks3=75;
+//         r1.display();
+//         r2.marks1=79;
+//         r2.marks2=89;
+//         r2.marks3=99;
+//         r2.display();
+//     }
+// }
+
+// class Car all features and create 5 methods like start(engine()), stop engine(),goahead().start wiper() ....
+
