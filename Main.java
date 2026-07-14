@@ -609,3 +609,70 @@ import java.util.*;
 
 // class Car all features and create 5 methods like start(engine()), stop engine(),goahead().start wiper() ....
 
+class Car {
+    String brand;
+    String model;
+    String color;
+    boolean isEngineRunning = false;
+    int currentSpeed = 0;
+    void setFeatures(String carBrand, String carModel, String carColor) {
+        brand = carBrand;
+        model = carModel;
+        color = carColor;
+    }
+
+    void startEngine() {
+        if (!isEngineRunning) {
+            isEngineRunning = true;
+            System.out.println("Engine started.");
+        } else {
+            System.out.println("The engine is already running.");
+        }
+    }
+
+    void stopEngine() {
+        if (isEngineRunning) {
+            isEngineRunning = false;
+            currentSpeed = 0;
+            System.out.println("Engine turned off safely.");
+        } else {
+            System.out.println("Engine is already off.");
+        }
+    }
+
+    void goAhead(int speedIncrement) {
+        if (isEngineRunning) {
+            currentSpeed += speedIncrement;
+            System.out.println("Accelerating ahead! Current speed: " + currentSpeed + " km/h");
+        } else {
+            System.out.println("Cannot move. Start the engine first!");
+        }
+    }
+
+    void startWiper() {
+        System.out.println("Wipers activated. Clearing the windshield.");
+    }
+
+    void displayCarDetails() {
+        System.out.println("--- Car Details ---");
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Color: " + color);
+        System.out.println("Engine Status: " + (isEngineRunning ? "ON" : "OFF"));
+        System.out.println("Speed: " + currentSpeed + " km/h");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.setFeatures("Tesla", "Model S", "Red");
+        myCar.displayCarDetails();
+        myCar.goAhead(20);      
+        myCar.startEngine();    
+        myCar.goAhead(40);     
+        myCar.goAhead(30);      
+        myCar.startWiper();     
+        myCar.stopEngine();    
+    }
+}
