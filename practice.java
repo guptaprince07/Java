@@ -788,25 +788,25 @@ import java.util.*;
 // }
 // }
 
-class practice{
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter array elements");
-        int [][]num=new int[2][4];
-        for(int i=0;i<2;i++){
-            for(int j=0;j<4;j++){
-                num[i][j]=sc.nextInt();
-            }
-        }
-        System.out.print("enter key here: ");
-        int key=sc.nextInt();
-        for(int i=0;i<2;i++){
-            for(int j=0;j<4;j++){
-                if(num[i][j]==key){
-                    System.out.printf("the index is:[%d][%d]",i,j);
-                }
-            }
-        }
-        sc.close();
-    }
-}
+// class practice{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter array elements");
+//         int [][]num=new int[2][4];
+//         for(int i=0;i<2;i++){
+//             for(int j=0;j<4;j++){
+//                 num[i][j]=sc.nextInt();
+//             }
+//         }
+//         System.out.print("enter key here: ");
+//         int key=sc.nextInt();
+//         for(int i=0;i<2;i++){
+//             for(int j=0;j<4;j++){
+//                 if(num[i][j]==key){
+//                     System.out.printf("the index is:[%d][%d]",i,j);
+//                 }
+//             }
+//         }
+//         sc.close();
+//     }
+// }

@@ -670,13 +670,31 @@ import java.util.*;
 //     }
 // }
 
-class Students{
-    Students(){
-        System.out.println("qwerty");
+// class Students{
+//     Students(){
+//         System.out.println("qwerty");
+//     }
+// }
+// public class Main{
+//     public static void main(String[] args) {
+//         Students std=new Students();
+//     }
+// }
+
+//create new class constructor and print value
+class Car {
+    String brand;
+    int year;
+    public Car(String carBrand, int carYear) {
+        brand = carBrand; 
+        year = carYear;
     }
-}
-public class Main{
+    public void displayDetails() {
+        System.out.println("Car Brand: " + brand);
+        System.out.println("Car Year: " + year);
+    }
     public static void main(String[] args) {
-        Students std=new Students();
+        Car myCar = new Car("Toyota", 2026);
+        myCar.displayDetails();
     }
 }
