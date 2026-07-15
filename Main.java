@@ -725,3 +725,43 @@ import java.util.*;
 //         s2.display(); 
 //     }
 // }
+
+// create class and constructor value pass then print value
+// class Mobile {
+//     String model;
+//     double price;
+
+//     Mobile(String mobileModel, double mobilePrice) {
+//         model = mobileModel;
+//         price = mobilePrice;
+//     }
+
+//     void printDetails() {
+//         System.out.println("Mobile Model: " + model);
+//         System.out.println("Mobile Price: ₹" + price);
+//     }
+// }
+
+// class Main {
+//     public static void main(String[] args) {
+//         Mobile myPhone = new Mobile("iPhone 17", 999.99);
+//         myPhone.printDetails();
+//     }
+// }
+
+//to acces static varribales no class and object is req
+//static wale non static ko access nhi kar sakte
+
+//do static var ek static method inka sum
+
+public class Main{
+    public static int number1 = 15;
+    public static int number2 = 25;
+    public static void printSum() {
+        int sum = number1 + number2;
+        System.out.println(sum);
+    }
+    public static void main(String[] args) {
+        printSum();
+    }
+}
