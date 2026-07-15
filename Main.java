@@ -700,28 +700,28 @@ import java.util.*;
 // }
 
 //create a class 2 diff method one with this keyword and other without this keyword
-class Student {
-    String name;
-    int age;
-    void detailsWithoutThis(String studentName, int studentAge) {
-        name = studentName; 
-        age = studentAge;
-    }
-    void detailsWithThis(String name, int age) {
-        this.name = name; 
-        this.age = age;
-    }
-    void display() {
-        System.out.println("Name: " + name + ", Age: " + age);
-    }
-}
-class Main {
-    public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.detailsWithoutThis("Alice", 20);
-        s1.display();
-        Student s2 = new Student();
-        s2.detailsWithThis("Bob", 22);
-        s2.display(); // Prints: Name: Bob, Age: 22
-    }
-}
+// class Student {
+//     String name;
+//     int age;
+//     void detailsWithoutThis(String studentName, int studentAge) {
+//         name = studentName; 
+//         age = studentAge;
+//     }
+//     void detailsWithThis(String name, int age) {
+//         this.name = name; 
+//         this.age = age;
+//     }
+//     void display() {
+//         System.out.println("Name: " + name + ", Age: " + age);
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Student s1 = new Student();
+//         s1.detailsWithoutThis("Alice", 20);
+//         s1.display();
+//         Student s2 = new Student();
+//         s2.detailsWithThis("Bob", 22);
+//         s2.display(); 
+//     }
+// }
