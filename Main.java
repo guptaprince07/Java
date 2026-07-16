@@ -852,23 +852,63 @@ import java.util.*;
 
 //parent class name bank child class inherit methods of parent to child money deposit withdraw methods
 
-class Bank {
-    double balance = 1000.0;
-    void deposit(double amt) {
-        balance += amt;
-        System.out.println("Deposited: " + amt + ", Balance: " + balance);
-    }
-    void withdraw(double amt) {
-        balance -= amt;
-        System.out.println("Withdrew: " + amt + ", Balance: " + balance);
+// class Bank {
+//     double balance = 1000.0;
+//     void deposit(double amt) {
+//         balance += amt;
+//         System.out.println("Deposited: " + amt + ", Balance: " + balance);
+//     }
+//     void withdraw(double amt) {
+//         balance -= amt;
+//         System.out.println("Withdrew: " + amt + ", Balance: " + balance);
+//     }
+// }
+// class SavingsAccount extends Bank {
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         SavingsAccount account = new SavingsAccount();
+//         account.deposit(500);
+//         account.withdraw(200);
+//     }
+// }
+
+//single level multi level and heiechary level :types of INHERITANCE
+
+//create class show eg of single multi and herichal 
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle started.");
     }
 }
-class SavingsAccount extends Bank {
+class Car extends Vehicle {
+    void drive() {
+        System.out.println("Driving the car.");
+    }
+}
+class ElectricCar extends Car {
+    void charge() {
+        System.out.println("Charging the electric car battery.");
+    }
+}
+class Truck extends Vehicle {
+    void loadCargo() {
+        System.out.println("Loading heavy cargo into the truck.");
+    }
 }
 class Main {
     public static void main(String[] args) {
-        SavingsAccount account = new SavingsAccount();
-        account.deposit(500);
-        account.withdraw(200);
+        Car myCar = new Car();
+        myCar.start(); 
+        myCar.drive(); 
+
+        ElectricCar myTesla = new ElectricCar();
+        myTesla.start();  
+        myTesla.drive();  
+        myTesla.charge(); 
+        
+        Truck myTruck = new Truck();
+        myTruck.start();     
+        myTruck.loadCargo(); 
     }
 }
