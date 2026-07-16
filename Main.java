@@ -876,39 +876,67 @@ import java.util.*;
 //single level multi level and heiechary level :types of INHERITANCE
 
 //create class show eg of single multi and herichal 
-class Vehicle {
-    void start() {
-        System.out.println("Vehicle started.");
+// class Vehicle {
+//     void start() {
+//         System.out.println("Vehicle started.");
+//     }
+// }
+// class Car extends Vehicle {
+//     void drive() {
+//         System.out.println("Driving the car.");
+//     }
+// }
+// class ElectricCar extends Car {
+//     void charge() {
+//         System.out.println("Charging the electric car battery.");
+//     }
+// }
+// class Truck extends Vehicle {
+//     void loadCargo() {
+//         System.out.println("Loading heavy cargo into the truck.");
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Car myCar = new Car();
+//         myCar.start(); 
+//         myCar.drive(); 
+
+//         ElectricCar myTesla = new ElectricCar();
+//         myTesla.start();  
+//         myTesla.drive();  
+//         myTesla.charge(); 
+        
+//         Truck myTruck = new Truck();
+//         myTruck.start();     
+//         myTruck.loadCargo(); 
+//     }
+// }
+
+//class varr method using super keyword call three
+class Parent {
+    String name = "Parent Variable";
+    Parent() {
+        System.out.println("1. Parent Constructor Called");
+    }
+    void show() {
+        System.out.println("2. Parent Method Called");
     }
 }
-class Car extends Vehicle {
-    void drive() {
-        System.out.println("Driving the car.");
+class Child extends Parent {
+    String name = "Child Variable";
+    Child() {
+        super(); 
     }
-}
-class ElectricCar extends Car {
-    void charge() {
-        System.out.println("Charging the electric car battery.");
-    }
-}
-class Truck extends Vehicle {
-    void loadCargo() {
-        System.out.println("Loading heavy cargo into the truck.");
+    void display() {
+        super.show(); 
+        System.out.println("3. Variable accessed: " + super.name); 
+        System.out.println("Local variable was: " + this.name);
     }
 }
 class Main {
     public static void main(String[] args) {
-        Car myCar = new Car();
-        myCar.start(); 
-        myCar.drive(); 
-
-        ElectricCar myTesla = new ElectricCar();
-        myTesla.start();  
-        myTesla.drive();  
-        myTesla.charge(); 
-        
-        Truck myTruck = new Truck();
-        myTruck.start();     
-        myTruck.loadCargo(); 
+        Child c = new Child(); 
+        c.display();           
     }
 }
