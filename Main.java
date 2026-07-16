@@ -810,22 +810,65 @@ import java.util.*;
 // }
 
 //class name student method name incap show using methods create private varriables
-class Student {
-    private String name;
-    private int age;
-    public void setDetails(String name, int age) {
-        this.name = name;
-        this.age = age;
+// class Student {
+//     private String name;
+//     private int age;
+//     public void setDetails(String name, int age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     public void incap() {
+//         System.out.println("Student Name: " + name);
+//         System.out.println("Student Age : " + age);
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Student s = new Student();
+//         s.setDetails("John Doe", 21);
+//         s.incap();
+//     }
+// }
+
+//Inheritance
+// class Animal{
+//    void eat (){
+//       System.out.println("hello i am eating ");
+//    }
+//    void sleep(){
+//       System.out.println("hello i am slleping");
+//    }
+// }
+// class Dog extends Animal {
+
+// }
+// class Main{
+//    public static void main(String args[])
+// {
+//    Dog dog = new Dog();
+//    dog.eat();
+//    dog.sleep();
+// }}
+
+//parent class name bank child class inherit methods of parent to child money deposit withdraw methods
+
+class Bank {
+    double balance = 1000.0;
+    void deposit(double amt) {
+        balance += amt;
+        System.out.println("Deposited: " + amt + ", Balance: " + balance);
     }
-    public void incap() {
-        System.out.println("Student Name: " + name);
-        System.out.println("Student Age : " + age);
+    void withdraw(double amt) {
+        balance -= amt;
+        System.out.println("Withdrew: " + amt + ", Balance: " + balance);
     }
+}
+class SavingsAccount extends Bank {
 }
 class Main {
     public static void main(String[] args) {
-        Student s = new Student();
-        s.setDetails("John Doe", 21);
-        s.incap();
+        SavingsAccount account = new SavingsAccount();
+        account.deposit(500);
+        account.withdraw(200);
     }
 }
