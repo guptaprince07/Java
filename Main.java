@@ -790,3 +790,42 @@ import java.util.*;
 //         printTotalEmployees();
 //     }
 // } 
+
+//incapsulation
+// class Employee{
+//     String name;
+//     int id;
+// }
+// String getName(){
+//     return name;
+// }
+// int getId(){
+//     return id;
+// }
+// void setName(String name){
+//     this.name=name;
+// }
+// void setId(int id){
+//     this.id=id;
+// }
+
+//class name student method name incap show using methods create private varriables
+class Student {
+    private String name;
+    private int age;
+    public void setDetails(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public void incap() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Student Age : " + age);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setDetails("John Doe", 21);
+        s.incap();
+    }
+}
