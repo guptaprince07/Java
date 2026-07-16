@@ -768,25 +768,25 @@ import java.util.*;
 
 //class employee 2 varribale id and name total employee no static type
 
-class Employee {
-    int id;
-    String name;
-    public static int totalEmployees = 0;
-    public Employee(int id, String name) {
-        this.id = id;
-        this.name = name;
-        totalEmployees++; 
-    }
-}
-public class Main {
-    public static void printTotalEmployees() {
-        System.out.println("Total Number of Employees: " + Employee.totalEmployees);
-    }
-    public static void main(String[] args) {
-        Employee emp1 = new Employee(101, "XYZ");
-        Employee emp2 = new Employee(102, "ABC");
-        Employee emp3 = new Employee(103, "PS");
-        Employee emp4 = new Employee(104, "qwerty");
-        printTotalEmployees();
-    }
-}
+// class Employee {
+//     int id;
+//     String name;
+//     public static int totalEmployees = 0;
+//     public Employee(int id, String name) {
+//         this.id = id;
+//         this.name = name;
+//         totalEmployees++; 
+//     }
+// }
+// public class Main {
+//     public static void printTotalEmployees() {
+//         System.out.println("Total Number of Employees: " + Employee.totalEmployees);
+//     }
+//     public static void main(String[] args) {
+//         Employee emp1 = new Employee(101, "XYZ");
+//         Employee emp2 = new Employee(102, "ABC");
+//         Employee emp3 = new Employee(103, "PS");
+//         Employee emp4 = new Employee(104, "qwerty");
+//         printTotalEmployees();
+//     }
+// } 
