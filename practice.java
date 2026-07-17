@@ -811,21 +811,49 @@ import java.util.*;
 //     }
 // }
 
-class practice{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter array elemements:");
-        int [][]num=new int[3][5];
-        for(int i=0;i<3;i++){
-            for(int j=0;j<5;j++){
-                num[i][j]=sc.nextInt();
-            }
-        }
-        for(int i=0;i<3;i++){
-            for(int j=0;j<5;j++){
-                System.out.println(num[i][j]);
-            }
-        System.out.println();
-    }
-    }
-}
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("Enter array elemements:");
+//         int [][]num=new int[3][5];
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<5;j++){
+//                 num[i][j]=sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<5;j++){
+//                 System.out.println(num[i][j]);
+//             }
+//         System.out.println();
+//     }
+//     }
+// }
+
+//String
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("Enter your name here: ");
+//         String name=sc.nextLine();
+//         System.out.println("Your name is:"+name);
+//     }
+// }
+
+//concatination in string
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter your first name here: ");
+//         String first_name=sc.next();
+//         System.out.println("enter your last name here: ");
+//         String last_name=sc.next();
+//         String full_name=first_name+" "+last_name;
+//         System.out.println("Your name is :"+full_name);
+//         System.out.println(full_name.length());
+//         //charAt()
+//         for(int i=0;i<full_name.length();i++){
+//             System.out.println(full_name.charAt(i));
+//         }
+//     }
+// }
