@@ -857,3 +857,24 @@ import java.util.*;
 //         }
 //     }
 // }
+
+//string comparision
+// class practice{
+//     public static void main(String[] args) {
+//         String name1="Prince";
+//         String name2="Gupta";
+//         if(name1.compareTo(name2)==0){
+//             System.out.println("Equal");
+//         }
+//         else{System.out.println("Not equal");}
+//     }
+// }
+
+//substing function
+class practice{
+    public static void main(String[] args) {
+        String line="Tony Stark was able to build this in a cave with a box of scraps";
+        String damn=line.substring(22,line.length());
+        System.out.println(damn);
+    }
+}
