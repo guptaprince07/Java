@@ -941,3 +941,26 @@ import java.util.*;
 //     }
 // }
 
+//method overloading
+// class Calculator{
+
+//     int add(int a, int b) { return a + b; }
+//     int add(int a, int b, int c) { return a + b + c; } 
+// }
+// class Animal {
+//     void sound() { System.out.println("Animal sound"); }
+// }
+// class Dog extends Animal {
+//     @Override
+//     void sound() { System.out.println("Bark"); } 
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Calculator cal = new Calculator();
+//         System.out.println(cal.add(5, 5));     
+//         System.out.println(cal.add(5, 5, 5));  
+//         Animal d = new Dog();
+//         d.sound();                             
+//     }
+// }
+//complie type polymorphism and runtime polymorphism
