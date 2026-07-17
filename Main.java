@@ -964,3 +964,26 @@ import java.util.*;
 //     }
 // }
 //complie type polymorphism and runtime polymorphism
+
+class Calculator {
+    // 1. Original method
+    void add(int a, int b) {
+        System.out.println("Sum of 2 numbers: " + (a + b));
+    }
+    void add(int a, int b, int c) {
+        System.out.println("Sum of 3 numbers: " + (a + b + c));
+    }
+}
+class AdvancedCalculator extends Calculator {
+    @Override
+    void add(int a, int b) {
+        System.out.println("Advanced Sum: " + (a + b));
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        AdvancedCalculator calc = new AdvancedCalculator();
+        calc.add(5, 10, 15); 
+        calc.add(5, 10); 
+    }
+}
