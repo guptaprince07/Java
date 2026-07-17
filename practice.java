@@ -880,15 +880,30 @@ import java.util.*;
 // }
 
 //Take an array of Strings input from the user & find the cumulative (combined) length of all those strings
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int total=0;
+//         String []array=new String[5];
+//         for(int i=0;i<array.length;i++){
+//             array[i]=sc.nextLine();
+//             total+=array[i].length();
+//         }
+//         System.out.println("The length of combined array is:"+total);
+//     }
+// }
+
+// Input a string from the user. Create a new string called ‘result’ in which you will replace the letter ‘e’ in the original string with letter ‘i’. 
+// Example : 
+// original = “eabcdef’ ; result = “iabcdif”
+// Original = “xyz” ; result = “xyz”
+
 class practice{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int total=0;
-        String []array=new String[5];
-        for(int i=0;i<array.length;i++){
-            array[i]=sc.nextLine();
-            total+=array[i].length();
-        }
-        System.out.println("The length of combined array is:"+total);
+        System.out.println("Enter string here:");
+        String name=sc.nextLine();
+        String result=name.replace("e","i");
+        System.out.println(result);
     }
 }
