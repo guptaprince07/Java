@@ -914,29 +914,29 @@ import java.util.*;
 // }
 
 //class varr method using super keyword call three
-class Parent {
-    String name = "Parent Variable";
-    Parent() {
-        System.out.println("1. Parent Constructor Called");
-    }
-    void show() {
-        System.out.println("2. Parent Method Called");
-    }
-}
-class Child extends Parent {
-    String name = "Child Variable";
-    Child() {
-        super(); 
-    }
-    void display() {
-        super.show(); 
-        System.out.println("3. Variable accessed: " + super.name); 
-        System.out.println("Local variable was: " + this.name);
-    }
-}
-class Main {
-    public static void main(String[] args) {
-        Child c = new Child(); 
-        c.display();           
-    }
-}
+// class Parent {
+//     String name = "Parent Variable";
+//     Parent() {
+//         System.out.println("1. Parent Constructor Called");
+//     }
+//     void show() {
+//         System.out.println("2. Parent Method Called");
+//     }
+// }
+// class Child extends Parent {
+//     String name = "Child Variable";
+//     Child() {
+//         super(); 
+//     }
+//     void display() {
+//         super.show(); 
+//         System.out.println("3. Variable accessed: " + super.name); 
+//         System.out.println("Local variable was: " + this.name);
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Child c = new Child(); 
+//         c.display();           
+//     }
+// }
