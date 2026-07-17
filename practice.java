@@ -871,10 +871,24 @@ import java.util.*;
 // }
 
 //substing function
+// class practice{
+//     public static void main(String[] args) {
+//         String line="Tony Stark was able to build this in a cave with a box of scraps";
+//         String damn=line.substring(22,line.length());
+//         System.out.println(damn);
+//     }
+// }
+
+//Take an array of Strings input from the user & find the cumulative (combined) length of all those strings
 class practice{
     public static void main(String[] args) {
-        String line="Tony Stark was able to build this in a cave with a box of scraps";
-        String damn=line.substring(22,line.length());
-        System.out.println(damn);
+        Scanner sc=new Scanner(System.in);
+        int total=0;
+        String []array=new String[5];
+        for(int i=0;i<array.length;i++){
+            array[i]=sc.nextLine();
+            total+=array[i].length();
+        }
+        System.out.println("The length of combined array is:"+total);
     }
 }
