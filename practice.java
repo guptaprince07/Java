@@ -959,13 +959,26 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         StringBuilder namee=new StringBuilder("Gupta");
+//         namee.insert(4,'a');
+//         System.out.println(namee);
+//         namee.delete(4,5);
+//         System.out.println(namee);
+//         //.delete function me last wala index include nhi hota ha
+//     }
+// }
+
+//append (last me add karta ha)
 class practice{
     public static void main(String[] args) {
-        StringBuilder namee=new StringBuilder("Gupta");
-        namee.insert(4,'a');
-        System.out.println(namee);
-        namee.delete(4,5);
-        System.out.println(namee);
-        //.delete function me last wala index include nhi hota ha
+        StringBuilder name=new StringBuilder("P");
+        name.append("r");
+        name.append("i");
+        name.append("n");
+        name.append("c");
+        name.append("e");
+        System.out.println(name);
     }
 }
