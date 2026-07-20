@@ -934,14 +934,38 @@ import java.util.*;
 //     }
 // }
 
-class practice{
-    public static void main(String args[]){
-        StringBuilder name= new StringBuilder("Prince");
-        System.out.println(name);
-        System.out.println(name.charAt(4));
+// class practice{
+//     public static void main(String args[]){
+//         StringBuilder name= new StringBuilder("Prince");
+//         System.out.println(name);
+//         System.out.println(name.charAt(4));
 
-        //set char at func
-        name.setCharAt(2,'S');
-        System.out.println(name);
+//         //set char at func
+//         name.setCharAt(2,'S');
+//         System.out.println(name);
+//     }
+// }
+
+// class practice{
+//     public static void main(String args[]){
+//         StringBuilder name= new StringBuilder("Prince");
+//         System.out.println(name);
+//         System.out.println(name.charAt(4));
+//         //insert function
+//         name.insert(0,'S');
+//         System.out.println(name);
+//         name.insert(4,'B');
+//         System.out.println(name);
+//     }
+// }
+
+class practice{
+    public static void main(String[] args) {
+        StringBuilder namee=new StringBuilder("Gupta");
+        namee.insert(4,'a');
+        System.out.println(namee);
+        namee.delete(4,5);
+        System.out.println(namee);
+        //.delete function me last wala index include nhi hota ha
     }
 }
