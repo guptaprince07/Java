@@ -988,15 +988,15 @@ import java.util.*;
 // }
 
 //sum 1 to n
-class Main{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-    int n=sc.nextInt();
-    int sum=0;
-    for(int i=0;i<=n;i++){
-        sum+=i;
-    }
-    System.out.println("sum is:"+sum);
-    }
-}
+// class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//     int n=sc.nextInt();
+//     int sum=0;
+//     for(int i=0;i<=n;i++){
+//         sum+=i;
+//     }
+//     System.out.println("sum is:"+sum);
+//     }
+// }
 //abstract method ke body nhi hoti
