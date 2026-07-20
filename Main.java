@@ -1002,31 +1002,59 @@ import java.util.*;
 //abstract method ke body nhi hoti
 
 //create a class inside class create a constructor inilize 5 instance varriables using constructor
-class Laptop {
-    String brand;
-    String processor;
-    int ramSizeGB;
-    int storageGB;
-    double price;
-    Laptop(String brand, String processor, int ramSizeGB, int storageGB, double price) {
-        this.brand = brand;
-        this.processor = processor;
-        this.ramSizeGB = ramSizeGB;
-        this.storageGB = storageGB;
-        this.price = price;
-    }
-    void displayDetails() {
-        System.out.println( brand);
-        System.out.println(processor);
-        System.out.println(ramSizeGB );
-        System.out.println(storageGB);
-        System.out.println(price);
-    }
-}
-class Main {
-    public static void main(String[] args) {
-        Laptop myLaptop = new Laptop("Dell", "Intel i7", 16, 512, 899000);
-        myLaptop.displayDetails();
-    }
-}
+// class Laptop {
+//     String brand;
+//     String processor;
+//     int ramSizeGB;
+//     int storageGB;
+//     double price;
+//     Laptop(String brand, String processor, int ramSizeGB, int storageGB, double price) {
+//         this.brand = brand;
+//         this.processor = processor;
+//         this.ramSizeGB = ramSizeGB;
+//         this.storageGB = storageGB;
+//         this.price = price;
+//     }
+//     void displayDetails() {
+//         System.out.println( brand);
+//         System.out.println(processor);
+//         System.out.println(ramSizeGB );
+//         System.out.println(storageGB);
+//         System.out.println(price);
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Laptop myLaptop = new Laptop("Dell", "Intel i7", 16, 512, 899000);
+//         myLaptop.displayDetails();
+//     }
+// }
+
 //runtime polymorphism example(method overwrting)
+
+//create two strings differentiating between heap and SCP memory
+//create an eg of static keyword(variables,methods and blocks)
+
+//String
+//new kwyword se har baar nawa object banega
+
+//input string form user then reverse
+// class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String name=sc.nextLine();
+//         String reverse="";
+//         for(int i=name.length()-1;i>=0;i--){
+//             reverse+=name.charAt(i);
+//         }
+//         System.out.println(reverse);
+//     }
+// }
+
+//replace 'a' with '@' in word astigmatism
+class Main{
+    public static void main(String []args){
+        String s="astigmatism";
+        System.out.println(s.replace('a','@'));
+    }
+}
