@@ -924,3 +924,24 @@ import java.util.*;
 //         System.out.println("username is: "+username);
 //     }
 // }
+
+//String builder
+// class practice{
+//     public static void main(String args[]){
+//         StringBuilder name= new StringBuilder("Prince");
+//         System.out.println(name);
+//         System.out.println(name.charAt(4));
+//     }
+// }
+
+class practice{
+    public static void main(String args[]){
+        StringBuilder name= new StringBuilder("Prince");
+        System.out.println(name);
+        System.out.println(name.charAt(4));
+
+        //set char at func
+        name.setCharAt(2,'S');
+        System.out.println(name);
+    }
+}
