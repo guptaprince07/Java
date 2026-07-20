@@ -1000,3 +1000,33 @@ import java.util.*;
 //     }
 // }
 //abstract method ke body nhi hoti
+
+//create a class inside class create a constructor inilize 5 instance varriables using constructor
+class Laptop {
+    String brand;
+    String processor;
+    int ramSizeGB;
+    int storageGB;
+    double price;
+    Laptop(String brand, String processor, int ramSizeGB, int storageGB, double price) {
+        this.brand = brand;
+        this.processor = processor;
+        this.ramSizeGB = ramSizeGB;
+        this.storageGB = storageGB;
+        this.price = price;
+    }
+    void displayDetails() {
+        System.out.println( brand);
+        System.out.println(processor);
+        System.out.println(ramSizeGB );
+        System.out.println(storageGB);
+        System.out.println(price);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Laptop myLaptop = new Laptop("Dell", "Intel i7", 16, 512, 899000);
+        myLaptop.displayDetails();
+    }
+}
+//runtime polymorphism example(method overwrting)
