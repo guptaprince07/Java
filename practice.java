@@ -971,14 +971,28 @@ import java.util.*;
 // }
 
 //append (last me add karta ha)
+// class practice{
+//     public static void main(String[] args) {
+//         StringBuilder name=new StringBuilder("P");
+//         name.append("r");
+//         name.append("i");
+//         name.append("n");
+//         name.append("c");
+//         name.append("e");
+//         System.out.println(name);
+//     }
+// }
+
+//reverse
 class practice{
     public static void main(String[] args) {
-        StringBuilder name=new StringBuilder("P");
-        name.append("r");
-        name.append("i");
-        name.append("n");
-        name.append("c");
-        name.append("e");
-        System.out.println(name);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter string here:");
+        String s=sc.nextLine();
+        String rev="";
+        for(int i=s.length()-1;i>=0;i--){
+            rev+=s.charAt(i);
+        }
+        System.out.println("reversed string is: "+rev);
     }
 }
