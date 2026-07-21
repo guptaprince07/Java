@@ -1052,9 +1052,20 @@ import java.util.*;
 // }
 
 //replace 'a' with '@' in word astigmatism
-class Main{
-    public static void main(String []args){
-        String s="astigmatism";
-        System.out.println(s.replace('a','@'));
+// class Main{
+//     public static void main(String []args){
+//         String s="astigmatism";
+//         System.out.println(s.replace('a','@'));
+//     }
+// }
+
+//Abstraction
+
+abstract class Animal{
+    abstract public void sound();
+}
+class Dog extends Animal{
+    public void  sound(){
+        System.out.println("Dog");
     }
 }
