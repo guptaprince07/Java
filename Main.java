@@ -1090,13 +1090,29 @@ import java.util.*;
 // }
 
 //input a string from and print its characters
-//"@" yourname replace vowels @
+// class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String name=sc.nextLine();
+//         for(int i=0;i<=name.length();i++){
+//             System.out.println(name.charAt(i));
+//         }
+//     }
+// }
 
+// "@" yourname replace vowels @
+// class Main{
+//     public static void main(String[] args) {
+//         String name="username";
+//         System.out.println(name.replace('e','@'));
+//     }
+// }
+
+//remove space form start and end " Hello World "
 class Main{
     public static void main(String[] args) {
-        String name="username";
-        for(int i=0;i<=name.length()-1;i++){
-            System.out.println(name.replace('e','@'));
-        }
+        String word=" Hello World ";
+            //System.out.println(word.replace(" ",""));
+            System.out.println(word.trim());
     }
 }
