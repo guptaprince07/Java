@@ -18,6 +18,11 @@ class Student{
         System.out.println(this.age);
         System.out.println(this.rollno);
     }
+    Student(String name,int age,int rollno){
+        this.name=name;
+        this.age=age;
+        this.rollno=rollno;
+    }//student constructor
 }
 
 public class oops{
@@ -34,10 +39,10 @@ public class oops{
         pen2.write();
         pen2.color();
 
-        Student s1=new Student();
-        s1.name="abc";
-        s1.age=18;
-        s1.rollno=1234567890;
+        Student s1=new Student("abc",18,123456789); //by using constructor
+        // s1.name="abc";
+        // s1.age=18;
+        // s1.rollno=1234567890;
         s1.print();
     }
 }
