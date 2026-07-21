@@ -1061,11 +1061,42 @@ import java.util.*;
 
 //Abstraction
 
-abstract class Animal{
-    abstract public void sound();
-}
-class Dog extends Animal{
-    public void  sound(){
-        System.out.println("Dog");
+// abstract class Animal{
+//     abstract public void sound();
+// }
+// class Dog extends Animal{
+//     public void  sound(){
+//         System.out.println("Dog");
+//     }
+// }
+
+//interface and abstarct class implement in child class then call via child class object 
+// interface Printable {
+//     void print();
+// }
+// abstract class Shape {
+//     abstract void draw();
+// }
+// class Circle extends Shape implements Printable {
+//     public void print() { System.out.println("Print"); }
+//     void draw() { System.out.println("Draw"); }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Circle c = new Circle();
+//         c.draw();  
+//         c.print(); 
+//     }
+// }
+
+//input a string from and print its characters
+//"@" yourname replace vowels @
+
+class Main{
+    public static void main(String[] args) {
+        String name="username";
+        for(int i=0;i<=name.length()-1;i++){
+            System.out.println(name.replace('e','@'));
+        }
     }
 }
