@@ -1109,10 +1109,25 @@ import java.util.*;
 // }
 
 //remove space form start and end " Hello World "
+// class Main{
+//     public static void main(String[] args) {
+//         String word=" Hello World ";
+//             //System.out.println(word.replace(" ",""));
+//             System.out.println(word.trim());
+//     }
+// }
+//coun the frequencey of every char in string
+//find the char with max freq
+//rev a string without using built in methods
+
 class Main{
-    public static void main(String[] args) {
-        String word=" Hello World ";
-            //System.out.println(word.replace(" ",""));
-            System.out.println(word.trim());
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String rev="";
+        for(int i=s.length()-1;i>=0;i--){
+            rev+=s.charAt(i);
+        }
+        System.out.println(rev);
     }
 }
