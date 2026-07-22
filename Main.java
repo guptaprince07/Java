@@ -1117,17 +1117,33 @@ import java.util.*;
 //     }
 // }
 //coun the frequencey of every char in string
-//find the char with max freq
-//rev a string without using built in methods
 
 class Main{
-    public static void main(String[]args){
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        String rev="";
-        for(int i=s.length()-1;i>=0;i--){
-            rev+=s.charAt(i);
+    public static void main(String[] args) {
+        String str="Prince";
+        int freq[]=new int[256];
+        for(int i=0;i<str.length();i++){
+            freq[str.charAt(i)]++;
         }
-        System.out.println(rev);
+        for (int i = 0; i < 256; i++) {
+            if (freq[i] > 0) {
+                System.out.println((char) i + " : " + freq[i]);
+            }
+        }
     }
 }
+//find the char with max freq
+
+
+//rev a string without using built in methods
+// class Main{
+//     public static void main(String[]args){
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         String rev="";
+//         for(int i=s.length()-1;i>=0;i--){
+//             rev+=s.charAt(i);
+//         }
+//         System.out.println(rev);
+//     }
+// }
