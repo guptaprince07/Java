@@ -1116,22 +1116,22 @@ import java.util.*;
 //             System.out.println(word.trim());
 //     }
 // }
-//coun the frequencey of every char in string
+//count the frequencey of every char in string
 
-class Main{
-    public static void main(String[] args) {
-        String str="Prince";
-        int freq[]=new int[256];
-        for(int i=0;i<str.length();i++){
-            freq[str.charAt(i)]++;
-        }
-        for (int i = 0; i < 256; i++) {
-            if (freq[i] > 0) {
-                System.out.println((char) i + " : " + freq[i]);
-            }
-        }
-    }
-}
+// class Main{
+//     public static void main(String[] args) {
+//         String str="Prince";
+//         int freq[]=new int[256];
+//         for(int i=0;i<str.length();i++){
+//             freq[str.charAt(i)]++;
+//         }
+//         for (int i = 0; i < 256; i++) {
+//             if (freq[i] > 0) {
+//                 System.out.println((char) i + " : " + freq[i]);
+//             }
+//         }
+//     }
+// }
 //find the char with max freq
 
 
@@ -1147,3 +1147,15 @@ class Main{
 //         System.out.println(rev);
 //     }
 // }
+
+//string immutable ha but jo string builder se bne ho vo muttable hoti ha
+
+//string builder first name pass then add last name using string builder method
+
+class Main{
+    public static void main(String[] args) {
+        StringBuilder name=new StringBuilder("ABC");
+        name.append(" "+"PS");
+        System.out.println(name);
+    }
+}
