@@ -1152,10 +1152,41 @@ import java.util.*;
 
 //string builder first name pass then add last name using string builder method
 
+// class Main{
+//     public static void main(String[] args) {
+//         StringBuilder name=new StringBuilder("ABC");
+//         name.append(" "+"PS");
+//         System.out.println(name);
+//     }
+// }
+
+//create a string and reverse using string builder
+// class Main{
+//     public static void main(String[] args) {
+//         StringBuilder s=new StringBuilder("QWERTY");
+//         System.out.println(s.reverse());
+//     }
+// }
+
+// class Main{
+//     public static void main(String[] args) {
+//         StringBuilder s=new StringBuilder("QWERTY");
+//         s.setCharAt(0,'@');
+//         System.out.println(s);
+//     }
+// }
+
+// class Main{
+//     public static void main(String[] args) {
+//         StringBuilder input=new StringBuilder("Programming");
+//         input.replace(3,7,"");
+//         System.out.println(input);
+//     }
+// }
+
 class Main{
     public static void main(String[] args) {
-        StringBuilder name=new StringBuilder("ABC");
-        name.append(" "+"PS");
-        System.out.println(name);
+        StringBuilder s=new StringBuilder("Hello World");
+        System.out.println(s.reverse());
     }
 }
