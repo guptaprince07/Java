@@ -1211,14 +1211,33 @@ import java.util.*;
 //     }
 // }
 
+// class Main{
+//     public static void main(String[] args) {
+//         int n=7;
+//         for(int i=n;i>=1;i=i-2){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println("");
+//         }
+//     }
+// }
+
 class Main{
     public static void main(String[] args) {
-        int n=7;
-        for(int i=n;i>=1;i=i-2){
-            for(int j=1;j<=i;j++){
-                System.out.print("*");
+        String str="aaaaabhhhbddg";
+        int count=1;
+        StringBuilder sb=new StringBuilder();
+        int n=str.length();
+        for(int i=0;i<n;i++){
+            if(i<n-1 && str.charAt(i)==str.charAt(i+1)){
+                count++;
             }
-            System.out.println("");
+            else{
+                sb.append(str.charAt(i)).append(count);
+                count=1;
+            }
         }
+        System.out.println(sb);
     }
 }
