@@ -996,3 +996,25 @@ import java.util.*;
 //         System.out.println("reversed string is: "+rev);
 //     }
 // }
+
+//vowels and consonants
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         int vowel=0;
+//         int cons=0;
+//         s=s.toLowerCase();
+//         for(int i=0;i<s.length();i++){
+//             char ch=s.charAt(i);
+//             if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+//                 vowel++;
+//             }
+//             else{
+//                 cons++;
+//             }
+//         }
+//         System.out.println("Vowels: "+vowel);
+//         System.out.println("Consonant: " +cons);
+//     }
+// }
