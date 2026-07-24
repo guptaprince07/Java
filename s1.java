@@ -54,14 +54,36 @@
 // }
 
 //Q-4
+// class s1{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String rev="";
+//         String s=sc.nextLine();
+//         for(int i=s.length()-1;i>=0;i--){
+//             rev+=s.charAt(i);
+//         }
+//         System.out.println(rev);
+//     }
+// }
+
+//vowels and consonants
 class s1{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String rev="";
         String s=sc.nextLine();
-        for(int i=s.length()-1;i>=0;i--){
-            rev+=s.charAt(i);
+        int vowel=0;
+        int con=0;
+        s=s.toLowerCase();
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                vowel++;
+            }
+            else{
+                con++;
+            }
         }
-        System.out.println(rev);
+        System.out.println("Vowel: "+vowel);
+        System.out.println("Consonant: "+con);
     }
 }
