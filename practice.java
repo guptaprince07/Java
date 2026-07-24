@@ -1018,3 +1018,21 @@ import java.util.*;
 //         System.out.println("Consonant: " +cons);
 //     }
 // }
+
+class practice{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.next();
+        String s2=sc.next();
+        char []S1=s1.toCharArray();
+        char []S2=s2.toCharArray();
+        Arrays.sort(S1);
+        Arrays.sort(S2);
+        if(Arrays.equals(S1,S2)){
+            System.out.println("Anagram");
+        }
+        else{
+            System.out.println("Not-Anagram");
+        }
+    }
+}
