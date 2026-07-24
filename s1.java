@@ -148,20 +148,136 @@
 // }
 
 //min in array
+// class s1{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int array[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             array[i]=sc.nextInt();
+//         }
+//         int min=array[0];
+//         for(int i=array.length-1;i>=0;i--){
+//             if(array[i]<min){
+//                 min=array[i];
+//             }
+//         }
+//         System.out.println("min is:"+min);
+//     }
+// }
+
+//second max in array
+// class s1{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int max=arr[0];
+//         for(int i=0;i<arr.length-1;i++){
+//             if(arr[i]>max){
+//                 max=arr[i];
+//             }
+//         }
+//         int smax=arr[0];
+//         for(int i=0;i<arr.length-1;i++){
+//             if(arr[i]>smax && arr[i]!=max){
+//                 smax=arr[i];
+//             }
+//         }
+//         System.out.println("max is:"+max);
+//         System.out.println("second max is:"+smax);
+//     }
+// }
+
+
+//hollow rectangle
+// class s1{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         for(int i=0;i<n;i++){
+//     for(int j=0;j<n;j++){
+//         if(i==0 || i==n-1 || j==0 || j==n-1){
+//             System.out.print("*");
+//         }
+//         else{
+//             System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+// }
+//     }
+// }
+
+// class s1{
+//     public static void main(String[] args) {
+//         int n=5;
+//         int m=4;
+//         for(int i=0;i<n;i++){
+//             for(int j=0;j<m;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println(" ");
+//         }
+//     }
+// }
+
+// class s1{
+//     public static void main(String[] args) {
+//         int n=5;
+//         int m=4;
+//         for(int i=0;i<n;i++){
+//             for(int j=0;j<m;j++){
+//                 if(i==0||i==n-1||j==0||j==m-1){
+//                     System.out.print("*");
+//                 }
+//                 else{
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//         }
+//     }
+
+// class s1{
+//     public static void main(String[] args) {
+//         int n=5;
+//         for(int i=0;i<n;i++){
+//             for(int j=0;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println(" ");
+//         }
+//     }
+// }
+
+// class s1{
+//     public static void main(String[] args) {
+//         int n=5;
+//         for(int i=n-1;i>=0;i--){
+//             for(int j=0;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println(" ");
+//         }
+//     }
+// }
+
 class s1{
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int array[]=new int[n];
-        for(int i=0;i<n;i++){
-            array[i]=sc.nextInt();
-        }
-        int min=array[0];
-        for(int i=array.length-1;i>=0;i--){
-            if(array[i]<min){
-                min=array[i];
+        int n=5;
+        for(int i=n;i>1;i--){
+            for(int j=1;j<i;j++){
+                System.out.print(" ");
             }
+            for(int j=0;j<=n-i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        System.out.println("min is:"+min);
     }
 }
