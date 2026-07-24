@@ -67,23 +67,41 @@
 // }
 
 //vowels and consonants
-class s1{
+// class s1{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         int vowel=0;
+//         int con=0;
+//         s=s.toLowerCase();
+//         for(int i=0;i<s.length();i++){
+//             char ch=s.charAt(i);
+//             if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+//                 vowel++;
+//             }
+//             else{
+//                 con++;
+//             }
+//         }
+//         System.out.println("Vowel: "+vowel);
+//         System.out.println("Consonant: "+con);
+//     }
+// }
+
+//anagram
+ class s1 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        int vowel=0;
-        int con=0;
-        s=s.toLowerCase();
-        for(int i=0;i<s.length();i++){
-            char ch=s.charAt(i);
-            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
-                vowel++;
-            }
-            else{
-                con++;
-            }
+        String s1="heart";
+        String s2="earth";
+        char []a=s1.toCharArray();
+        char []b=s2.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        if(Arrays.equals(a, b)){
+            System.out.println("Anagram");
         }
-        System.out.println("Vowel: "+vowel);
-        System.out.println("Consonant: "+con);
+        else{
+            System.out.println("Non Anagram");
+        }
     }
 }
