@@ -333,9 +333,51 @@
 //     }
 // }
 
+// class s1{
+//     public static void main(String[] args) {
+//         String s=" Hello World ";
+//         System.out.println(s.trim());
+//     }
+// }
+
+
+// class s1 {
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         for (int i = 1; i <= n; i++) {
+
+//             // Print stars
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+
+//             // Print numbers
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(j);
+//             }
+
+//             System.out.println();
+//         }
+//     }
+// }
+
 class s1{
     public static void main(String[] args) {
-        String s=" Hello World ";
-        System.out.println(s.trim());
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String rev="";
+        String temp=s;
+        for(int i=s.length()-1;i>=0;i--){
+            rev+=s.charAt(i);
+        }
+        if(temp.equals(rev)){
+            System.out.println("Pallindrome");
+        }
+        else{
+            System.out.println("Not Pallindrome");
+        }
     }
 }
