@@ -1322,32 +1322,32 @@ import java.util.*;
 // }
 
 //Search element at index in 2-d array
-class Main{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int arr[][]=new int[3][3];
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
-        int key=14;
-        boolean found=false;
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                if(arr[i][j]==key){
-                    System.out.println("Found"+i+" "+j);
-                    found=true;
-                    break;
-                }
-            }
-            if(found)break;
-        }
-        if(!found){
-            System.out.println("not found");
-        }
-    }
-}
+// class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int arr[][]=new int[3][3];
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int key=14;
+//         boolean found=false;
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 if(arr[i][j]==key){
+//                     System.out.println("Found"+i+" "+j);
+//                     found=true;
+//                     break;
+//                 }
+//             }
+//             if(found)break;
+//         }
+//         if(!found){
+//             System.out.println("not found");
+//         }
+//     }
+// }
 
 //sum of 2 matrx 
 //sum of each row and column
