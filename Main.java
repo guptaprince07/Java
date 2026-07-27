@@ -1296,27 +1296,59 @@ import java.util.*;
 // }
 
 //max in 2-d array
+// class Main{
+//     public static void main(String[] args) {
+//      Scanner sc=new Scanner(System.in);
+//         int arr[][]=new int[3][3];
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }}   
+//             int max=arr[0][0];
+//             int maxrow=0;
+//             int colmax=0;
+//             for(int i=0;i<3;i++){
+//                 for(int j=0;j<3;j++){
+//                     if(arr[i][j]>max){
+//                         max=arr[i][j];
+//                         maxrow=i;
+//                         colmax=j;
+//                     }
+//                 }
+//             }
+//             System.out.println("max is:"+max);
+//             System.out.println("index:"+maxrow+" "+colmax);
+//     }
+// }
+
+//Search element at index in 2-d array
 class Main{
     public static void main(String[] args) {
-     Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int arr[][]=new int[3][3];
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 arr[i][j]=sc.nextInt();
-            }}   
-            int max=arr[0][0];
-            int maxrow=0;
-            int colmax=0;
-            for(int i=0;i<3;i++){
-                for(int j=0;j<3;j++){
-                    if(arr[i][j]>max){
-                        max=arr[i][j];
-                        maxrow=i;
-                        colmax=j;
-                    }
+            }
+        }
+        int key=14;
+        boolean found=false;
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                if(arr[i][j]==key){
+                    System.out.println("Found"+i+" "+j);
+                    found=true;
+                    break;
                 }
             }
-            System.out.println("max is:"+max);
-            System.out.println("index:"+maxrow+" "+colmax);
+            if(found)break;
+        }
+        if(!found){
+            System.out.println("not found");
+        }
     }
 }
+
+//sum of 2 matrx 
+//sum of each row and column
+//determinant of 2-d array
