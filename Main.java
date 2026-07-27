@@ -1243,14 +1243,14 @@ import java.util.*;
 // }
 
 //find first repeating char: CAMERA
-class Main{
-    public static void main (String[] args){
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-                for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
-            if (str.indexOf(c) == i && str.lastIndexOf(c) != i) {
-                System.out.println(c);
-            }
-        }
-    }}
+// class Main{
+//     public static void main (String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//                 for (int i = 0; i < str.length(); i++) {
+//             char c = str.charAt(i);
+//             if (str.indexOf(c) == i && str.lastIndexOf(c) != i) {
+//                 System.out.println(c);
+//             }
+//         }
+//     }}
