@@ -1275,3 +1275,48 @@ import java.util.*;
 // }
 
 //sum of diagonal elements in 2-d array
+// class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int arr[][]=new int[3][3];
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }}
+//             int n=arr.length;
+//             int leftsum=0;
+//             int rightsum=0;
+//             for(int k=0;k<n;k++){
+//                 leftsum+=arr[k][k];
+//                 rightsum+=arr[k][n-1-k];
+//             }
+//             System.out.println("left sum:"+leftsum);
+//             System.out.println("right sum:"+rightsum);
+//     }
+// }
+
+//max in 2-d array
+class Main{
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+        int arr[][]=new int[3][3];
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                arr[i][j]=sc.nextInt();
+            }}   
+            int max=arr[0][0];
+            int maxrow=0;
+            int colmax=0;
+            for(int i=0;i<3;i++){
+                for(int j=0;j<3;j++){
+                    if(arr[i][j]>max){
+                        max=arr[i][j];
+                        maxrow=i;
+                        colmax=j;
+                    }
+                }
+            }
+            System.out.println("max is:"+max);
+            System.out.println("index:"+maxrow+" "+colmax);
+    }
+}
