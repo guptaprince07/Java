@@ -1223,21 +1223,34 @@ import java.util.*;
 //     }
 // }
 
+// class Main{
+//     public static void main(String[] args) {
+//         String str="aaaaabhhhbddg";
+//         int count=1;
+//         StringBuilder sb=new StringBuilder();
+//         int n=str.length();
+//         for(int i=0;i<n;i++){
+//             if(i<n-1 && str.charAt(i)==str.charAt(i+1)){
+//                 count++;
+//             }
+//             else{
+//                 sb.append(str.charAt(i)).append(count);
+//                 count=1;
+//             }
+//         }
+//         System.out.println(sb);
+//     }
+// }
+
+//find first repeating char: CAMERA
 class Main{
-    public static void main(String[] args) {
-        String str="aaaaabhhhbddg";
-        int count=1;
-        StringBuilder sb=new StringBuilder();
-        int n=str.length();
-        for(int i=0;i<n;i++){
-            if(i<n-1 && str.charAt(i)==str.charAt(i+1)){
-                count++;
-            }
-            else{
-                sb.append(str.charAt(i)).append(count);
-                count=1;
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+                for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (str.indexOf(c) == i && str.lastIndexOf(c) != i) {
+                System.out.println(c);
             }
         }
-        System.out.println(sb);
-    }
-}
+    }}
