@@ -1382,4 +1382,26 @@ import java.util.*;
 
 //determinant of 2-d array
 //q-48 leetcode rotate a matrix
-// q-463 leetcode
+// q-463 && 867 leetcode
+//
+
+class Main {
+    public int addDigits(int num) {
+        if(num==0)return 0;
+        int sum=0;
+        int r=0;
+        while(num>0){
+            r=num%10;
+            sum+=r;
+            num=num/10;
+        }
+        int sum2=0;
+        int p=0;
+        while(sum>0){
+            p=sum%10;
+            sum2+=p;
+            sum2=sum2/10;
+        }
+        return sum2;
+    }
+}
