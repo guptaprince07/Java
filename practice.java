@@ -712,7 +712,7 @@ import java.util.*;
 // }
 // }
 
-//max in array
+// in array
 // class practice{
 //     public static void main(String args[]){
 //         Scanner sc=new Scanner(System.in);
@@ -1093,5 +1093,16 @@ import java.util.*;
 //         }
 //         System.out.println("left diagonal sum: "+leftsum);
 //         System.out.println("right diagonal sum: "+rightsum);
+//     }
+// }
+
+// class Solution {
+//     public int[] searchRange(int[] nums, int target) {
+//         for(int i=0;i<nums.length;i++){
+//             while(nums[i]==target){
+//                 return i;
+//             }
+//         }
+//         return -1;
 //     }
 // }
