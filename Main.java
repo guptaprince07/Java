@@ -1425,35 +1425,71 @@ import java.util.*;
 //q-3146
 
 //q-3731
+// class Solution {
+//     public List<Integer> findMissingElements(int[] nums) {
+//         if (nums.length == 0) return new ArrayList<>();
+//         int max = nums[0];
+//         int min = nums[0];
+//         for (int i = 0; i < nums.length; i++) {
+//             if (nums[i] > max) max = nums[i];
+//             if (nums[i] < min) min = nums[i];
+//         }
+//         int size = max - min + 1;
+//         int res[] = new int[size];
+//         int index = 0;
+//         for (int i = min; i <= max; i++) {
+//             boolean found = false;
+//             for (int j = 0; j < nums.length; j++) {
+//                 if (nums[j] == i) {
+//                     found = true; 
+//                     break;        
+//                 }
+//             }
+//             if (!found) {
+//                 res[index] = i;
+//                 index++;
+//             }
+//         }
+//         List<Integer> list = new ArrayList<>();
+//         for (int k = 0; k < index; k++) {
+//             list.add(res[k]);
+//         }
+//         return list;
+//     }
+// }
+
+//q-414
 class Solution {
-    public List<Integer> findMissingElements(int[] nums) {
-        if (nums.length == 0) return new ArrayList<>();
+    public int thirdMax(int[] nums) {
+        int n = nums.length;
         int max = nums[0];
-        int min = nums[0];
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > max) max = nums[i];
-            if (nums[i] < min) min = nums[i];
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
         }
-        int size = max - min + 1;
-        int res[] = new int[size];
-        int index = 0;
-        for (int i = min; i <= max; i++) {
-            boolean found = false;
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[j] == i) {
-                    found = true; 
-                    break;        
+        int smax = 0;
+        boolean foundSmax = false;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != max) {
+                if (!foundSmax || nums[i] > smax) {
+                    smax = nums[i];
+                    foundSmax = true;
+                }
+            }}
+        if (!foundSmax) {
+            return max;
+        }
+        int tmax = 0;
+        boolean foundTmax = false;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != max && nums[i] != smax) {
+                if (!foundTmax || nums[i] > tmax) {
+                    tmax = nums[i];
+                    foundTmax = true;
                 }
             }
-            if (!found) {
-                res[index] = i;
-                index++;
-            }
         }
-        List<Integer> list = new ArrayList<>();
-        for (int k = 0; k < index; k++) {
-            list.add(res[k]);
-        }
-        return list;
+        return foundTmax ? tmax : max;
     }
 }
