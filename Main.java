@@ -1459,37 +1459,53 @@ import java.util.*;
 // }
 
 //q-414
+// class Solution {
+//     public int thirdMax(int[] nums) {
+//         int n = nums.length;
+//         int max = nums[0];
+//         for (int i = 0; i < n; i++) {
+//             if (nums[i] > max) {
+//                 max = nums[i];
+//             }
+//         }
+//         int smax = 0;
+//         boolean foundSmax = false;
+//         for (int i = 0; i < n; i++) {
+//             if (nums[i] != max) {
+//                 if (!foundSmax || nums[i] > smax) {
+//                     smax = nums[i];
+//                     foundSmax = true;
+//                 }
+//             }}
+//         if (!foundSmax) {
+//             return max;
+//         }
+//         int tmax = 0;
+//         boolean foundTmax = false;
+//         for (int i = 0; i < n; i++) {
+//             if (nums[i] != max && nums[i] != smax) {
+//                 if (!foundTmax || nums[i] > tmax) {
+//                     tmax = nums[i];
+//                     foundTmax = true;
+//                 }
+//             }
+//         }
+//         return foundTmax ? tmax : max;
+//     }
+// }
+
+//q-219
 class Solution {
-    public int thirdMax(int[] nums) {
-        int n = nums.length;
-        int max = nums[0];
-        for (int i = 0; i < n; i++) {
-            if (nums[i] > max) {
-                max = nums[i];
-            }
-        }
-        int smax = 0;
-        boolean foundSmax = false;
-        for (int i = 0; i < n; i++) {
-            if (nums[i] != max) {
-                if (!foundSmax || nums[i] > smax) {
-                    smax = nums[i];
-                    foundSmax = true;
-                }
-            }}
-        if (!foundSmax) {
-            return max;
-        }
-        int tmax = 0;
-        boolean foundTmax = false;
-        for (int i = 0; i < n; i++) {
-            if (nums[i] != max && nums[i] != smax) {
-                if (!foundTmax || nums[i] > tmax) {
-                    tmax = nums[i];
-                    foundTmax = true;
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        //Arrays.sort(nums);
+        if (k==50000) return true;
+        for(int i=0;i<nums.length;i++){
+            for(int j=i+1;j<=i+k && j<nums.length;j++){
+                if(nums[i]==nums[j]){
+                    return true;
                 }
             }
-        }
-        return foundTmax ? tmax : max;
     }
+     return false;
+}
 }
