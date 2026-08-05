@@ -1495,17 +1495,34 @@ import java.util.*;
 // }
 
 //q-219
+// class Solution {
+//     public boolean containsNearbyDuplicate(int[] nums, int k) {
+//         //Arrays.sort(nums);
+//         if (k==50000) return true;
+//         for(int i=0;i<nums.length;i++){
+//             for(int j=i+1;j<=i+k && j<nums.length;j++){
+//                 if(nums[i]==nums[j]){
+//                     return true;
+//                 }
+//             }
+//     }
+//      return false;
+// }
+// }
+
+//q-pivot index
 class Solution {
-    public boolean containsNearbyDuplicate(int[] nums, int k) {
-        //Arrays.sort(nums);
-        if (k==50000) return true;
-        for(int i=0;i<nums.length;i++){
-            for(int j=i+1;j<=i+k && j<nums.length;j++){
-                if(nums[i]==nums[j]){
-                    return true;
-                }
-            }
+    public int pivotIndex(int[] nums) {
+        int Lsum=0,Rsum=0;
+        for (int i=0;i<nums.length;i++){
+            Rsum+=nums[i];
+        }
+        for (int i=0;i<nums.length;i++){
+            Rsum-=nums[i];
+            if (Lsum==Rsum) return i;
+            Lsum+=nums[i];
+            
+        }
+        return -1;
     }
-     return false;
-}
 }
