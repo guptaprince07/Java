@@ -1511,18 +1511,22 @@ import java.util.*;
 // }
 
 //q-pivot index
-class Solution {
-    public int pivotIndex(int[] nums) {
-        int Lsum=0,Rsum=0;
-        for (int i=0;i<nums.length;i++){
-            Rsum+=nums[i];
-        }
-        for (int i=0;i<nums.length;i++){
-            Rsum-=nums[i];
-            if (Lsum==Rsum) return i;
-            Lsum+=nums[i];
+// class Solution {
+//     public int pivotIndex(int[] nums) {
+//         int Lsum=0,Rsum=0;
+//         for (int i=0;i<nums.length;i++){
+//             Rsum+=nums[i];
+//         }
+//         for (int i=0;i<nums.length;i++){
+//             Rsum-=nums[i];
+//             if (Lsum==Rsum) return i;
+//             Lsum+=nums[i];
             
-        }
-        return -1;
-    }
-}
+//         }
+//         return -1;
+//     }
+// }
+
+//implement the add() method using method overloading and it should accept it 3 int values 5 float values ,4 double values;
+//implement the method overriding
+// implement multi level inheritance
