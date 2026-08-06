@@ -1530,3 +1530,23 @@ import java.util.*;
 //implement the add() method using method overloading and it should accept it 3 int values 5 float values ,4 double values;
 //implement the method overriding
 // implement multi level inheritance
+
+
+//q-482
+class Solution {
+    public String licenseKeyFormatting(String s, int k) {
+        
+         String clean = s.replace("-", "").toUpperCase();
+          StringBuilder result = new StringBuilder();
+          int len = clean.length();
+            for (int i = 0; i < len; i++){
+                if (i > 0 && (len - i) % k == 0) {
+                result.append('-');
+
+            }
+            result.append(clean.charAt(i));
+
+    }
+        return result.toString();
+}
+}
