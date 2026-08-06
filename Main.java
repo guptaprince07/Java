@@ -1533,20 +1533,20 @@ import java.util.*;
 
 
 //q-482
-class Solution {
-    public String licenseKeyFormatting(String s, int k) {
+// class Solution {
+//     public String licenseKeyFormatting(String s, int k) {
         
-         String clean = s.replace("-", "").toUpperCase();
-          StringBuilder result = new StringBuilder();
-          int len = clean.length();
-            for (int i = 0; i < len; i++){
-                if (i > 0 && (len - i) % k == 0) {
-                result.append('-');
+//          String clean = s.replace("-", "").toUpperCase();
+//           StringBuilder result = new StringBuilder();
+//           int len = clean.length();
+//             for (int i = 0; i < len; i++){
+//                 if (i > 0 && (len - i) % k == 0) {
+//                 result.append('-');
 
-            }
-            result.append(clean.charAt(i));
+//             }
+//             result.append(clean.charAt(i));
 
-    }
-        return result.toString();
-}
-}
+//     }
+//         return result.toString();
+// }
+// }
