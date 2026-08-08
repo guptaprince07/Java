@@ -64,24 +64,43 @@
 //     }
 // }
 
-class Employee{
-    int salary;
-    String name;
-    public int getSalary(){
-        return salary;
+// class Employee{
+//     int salary;
+//     String name;
+//     public int getSalary(){
+//         return salary;
+//     }
+//     public String getName(){
+//         return name;
+//     }
+//     public void setName(String n){
+//         name=n;
+//     }
+// }
+
+class sq{
+    int side;
+    public int area(){
+        return side*side;
     }
-    public String getName(){
-        return name;
-    }
-    public void setName(String n){
-        name=n;
+    public int peri(){
+        return 4*side;
     }
 }
 class oops{
     public static void main(String[] args) {
-        Employee e1=new Employee();
-        e1.setName("Prince");
-        e1.getName();
-        System.out.println(e1.getName());
+        // Employee e1=new Employee();
+        // e1.setName("Prince");
+        // e1.getName();
+        // e1.salary=5000000;
+        // e1.getSalary();
+        // System.out.println(e1.getSalary());
+        // System.out.println(e1.getName());
+        sq s1=new sq();
+        s1.side=40;
+        s1.area();
+        System.out.println(s1.area());
+        s1.peri();
+        System.out.println(s1.peri());
     }
-}
+} 
