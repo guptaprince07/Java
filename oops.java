@@ -64,3 +64,24 @@
 //     }
 // }
 
+class Employee{
+    int salary;
+    String name;
+    public int getSalary(){
+        return salary;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String n){
+        name=n;
+    }
+}
+class oops{
+    public static void main(String[] args) {
+        Employee e1=new Employee();
+        e1.setName("Prince");
+        e1.getName();
+        System.out.println(e1.getName());
+    }
+}
