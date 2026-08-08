@@ -78,15 +78,25 @@
 //     }
 // }
 
-class sq{
-    int side;
+// class sq{
+//     int side;
+//     public int area(){
+//         return side*side;
+//     }
+//     public int peri(){
+//         return 4*side;
+//     }
+// }
+
+class rec{
+    int l;
+    int b;
     public int area(){
-        return side*side;
+        return l*b;
     }
     public int peri(){
-        return 4*side;
-    }
-}
+        return 2*(l+b);
+    }}
 class oops{
     public static void main(String[] args) {
         // Employee e1=new Employee();
@@ -96,8 +106,15 @@ class oops{
         // e1.getSalary();
         // System.out.println(e1.getSalary());
         // System.out.println(e1.getName());
-        sq s1=new sq();
-        s1.side=40;
+        //  s1=new sq();
+        // s1.side=40;
+        // s1.area();
+        // System.out.println(s1.area());
+        // s1.peri();
+        // System.out.println(s1.peri());
+        rec s1=new rec();
+        s1.l=40;
+        s1.b=30;
         s1.area();
         System.out.println(s1.area());
         s1.peri();
