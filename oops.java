@@ -88,15 +88,15 @@
 //     }
 // }
 
-class rec{
-    int l;
-    int b;
-    public int area(){
-        return l*b;
-    }
-    public int peri(){
-        return 2*(l+b);
-    }}
+// class rec{
+//     int l;
+//     int b;
+//     public int area(){
+//         return l*b;
+//     }
+//     public int peri(){
+//         return 2*(l+b);
+//     }}
 class oops{
     public static void main(String[] args) {
         // Employee e1=new Employee();
@@ -112,12 +112,12 @@ class oops{
         // System.out.println(s1.area());
         // s1.peri();
         // System.out.println(s1.peri());
-        rec s1=new rec();
-        s1.l=40;
-        s1.b=30;
-        s1.area();
-        System.out.println(s1.area());
-        s1.peri();
-        System.out.println(s1.peri());
+        // rec s1=new rec();
+        // s1.l=40;
+        // s1.b=30;
+        // s1.area();
+        // System.out.println(s1.area());
+        // s1.peri();
+        // System.out.println(s1.peri());
     }
 } 
