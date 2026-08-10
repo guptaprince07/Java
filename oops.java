@@ -116,6 +116,33 @@
 //     this.height=height;
 // }
 // }
+
+class circle{
+    public int r;
+    public float area;
+
+    public int getR(){
+        return r;
+    }
+    public void setR(int r){
+        this.r=r;
+    }
+
+    public float getArea(){
+        return (float)3.14*r*r;
+    }
+}
+
+class cylinder extends circle{
+    public int h;
+
+    public int getH(){
+        return h;
+    }
+    public void setH(int h){
+        this.h=h;
+    }
+}
 class oops{
     public static void main(String[] args) {
         // Employee e1=new Employee();
@@ -146,5 +173,14 @@ class oops{
         // c1.getRaidus();
         // System.out.println(c1.getHeight());
         // System.out.println(c1.getRaidus());
+
+        cylinder cy1=new cylinder();
+        cy1.setH(14);
+        cy1.getH();
+        System.out.println(cy1.getH());
+        cy1.setR(45);
+        cy1.getR();
+        cy1.getArea();
+        System.out.println(cy1.getArea());
     }
 } 
