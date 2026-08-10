@@ -98,24 +98,24 @@
 //         return 2*(l+b);
 //     }}
 
-class cylinder{
-    private int radius;
-    private int height;
+// class cylinder{
+//     private int radius;
+//     private int height;
 
-    public int getRaidus(){
-    return radius;
-}
-public void setRaidus(int radius){
-    this.radius =radius;
-}
+//     public int getRaidus(){
+//     return radius;
+// }
+// public void setRaidus(int radius){
+//     this.radius =radius;
+// }
 
-public int getHeight(){
-    return height;
-}
-public void setHeight(int height){
-    this.height=height;
-}
-}
+// public int getHeight(){
+//     return height;
+// }
+// public void setHeight(int height){
+//     this.height=height;
+// }
+// }
 class oops{
     public static void main(String[] args) {
         // Employee e1=new Employee();
@@ -138,13 +138,13 @@ class oops{
         // System.out.println(s1.area());
         // s1.peri();
         // System.out.println(s1.peri());
-        cylinder c1=new cylinder();
-        c1.setHeight(100);
-        c1.setRaidus(45);
+        // cylinder c1=new cylinder();
+        // c1.setHeight(100);
+        // c1.setRaidus(45);
 
-        c1.getHeight();
-        c1.getRaidus();
-        System.out.println(c1.getHeight());
-        System.out.println(c1.getRaidus());
+        // c1.getHeight();
+        // c1.getRaidus();
+        // System.out.println(c1.getHeight());
+        // System.out.println(c1.getRaidus());
     }
 } 
