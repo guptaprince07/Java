@@ -128,7 +128,7 @@ class circle{
         this.r=r;
     }
 
-    public float getArea(){
+    public float getCircleArea(){
         return (float)3.14*r*r;
     }
 }
@@ -141,6 +141,10 @@ class cylinder extends circle{
     }
     public void setH(int h){
         this.h=h;
+    }
+
+    public  float volume(){
+        return getCircleArea()*h;
     }
 }
 class oops{
@@ -180,7 +184,9 @@ class oops{
         System.out.println(cy1.getH());
         cy1.setR(45);
         cy1.getR();
-        cy1.getArea();
-        System.out.println(cy1.getArea());
+        cy1.getCircleArea();
+        System.out.println(cy1.getCircleArea());
+        cy1.volume();
+        System.out.println(cy1.volume());
     }
 } 
