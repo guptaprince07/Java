@@ -43,41 +43,40 @@ import java.util.*;
 // }
 
 //q-3
-interface Vehicle {
-    double fuelEfficency(double dis,double fuelUsed);
-    
-}
-class Car implements Vehicle{
-    @Override
-    public double fuelEfficency(double dis, double fuelUsed) {
-        return dis/fuelUsed;
-    }
-}
-class Bike implements Vehicle{
-    @Override
-    public double fuelEfficency(double dis, double fuelUsed){
-        return dis/fuelUsed;
-    }
-}
-public class s2{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int choice=sc.nextInt();
-        double dis=sc.nextDouble();
-        double fuelUsed=sc.nextDouble();
-        Vehicle veh=null;
-        if(choice==1){
-            veh=new Car();
-        }
-        else if(choice==2){
-            veh=new Bike();
-        }
-        if(veh!=null){
-            double efficency=veh.fuelEfficency(dis, fuelUsed);
-            System.out.printf("%.2f",efficency);
-        }
-    }
-}
+// interface Vehicle {
+//     double fuelEfficency(double dis,double fuelUsed);
+// }
+// class Car implements Vehicle{
+//     @Override
+//     public double fuelEfficency(double dis, double fuelUsed) {
+//         return dis/fuelUsed;
+//     }
+// }
+// class Bike implements Vehicle{
+//     @Override
+//     public double fuelEfficency(double dis, double fuelUsed){
+//         return dis/fuelUsed;
+//     }
+// }
+// public class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int choice=sc.nextInt();
+//         double dis=sc.nextDouble();
+//         double fuelUsed=sc.nextDouble();
+//         Vehicle veh=null;
+//         if(choice==1){
+//             veh=new Car();
+//         }
+//         else if(choice==2){
+//             veh=new Bike();
+//         }
+//         if(veh!=null){
+//             double efficency=veh.fuelEfficency(dis, fuelUsed);
+//             System.out.printf("%.2f",efficency);
+//         }
+//     }
+// }
 
 //q-4
 // class s2{
@@ -97,6 +96,55 @@ public class s2{
 
 //q-5
 //q-6
+class Employee {
+    protected double baseSalary;
+
+    public Employee(double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+    public double calculateSalary() {
+        return baseSalary;
+    }
+}
+class Manager extends Employee {
+    public Manager(double baseSalary) {
+        super(baseSalary);
+    }
+    @Override
+    public double calculateSalary() {
+        return baseSalary + 5000;
+    }
+}
+class Developer extends Employee {
+    private int projects;
+    public Developer(double baseSalary, int projects) {
+        super(baseSalary);
+        this.projects = projects;
+    }
+    @Override
+    public double calculateSalary() {
+        return baseSalary + (projects * 2000);
+    }
+}
+
+public class s2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int choice = sc.nextInt();
+        double baseSalary = sc.nextDouble();
+        Employee emp = null;
+        if (choice == 1) {
+            emp = new Manager(baseSalary);
+        } else if (choice == 2) {
+            int projects = sc.nextInt();
+            emp = new Developer(baseSalary, projects);
+        }
+        if (emp != null) {
+            System.out.println(emp.calculateSalary());
+        }
+    }
+}
 
 //q-7
 // class s2{
