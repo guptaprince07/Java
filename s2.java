@@ -43,6 +43,41 @@ import java.util.*;
 // }
 
 //q-3
+interface Vehicle {
+    double fuelEfficency(double dis,double fuelUsed);
+    
+}
+class Car implements Vehicle{
+    @Override
+    public double fuelEfficency(double dis, double fuelUsed) {
+        return dis/fuelUsed;
+    }
+}
+class Bike implements Vehicle{
+    @Override
+    public double fuelEfficency(double dis, double fuelUsed){
+        return dis/fuelUsed;
+    }
+}
+public class s2{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int choice=sc.nextInt();
+        double dis=sc.nextDouble();
+        double fuelUsed=sc.nextDouble();
+        Vehicle veh=null;
+        if(choice==1){
+            veh=new Car();
+        }
+        else if(choice==2){
+            veh=new Bike();
+        }
+        if(veh!=null){
+            double efficency=veh.fuelEfficency(dis, fuelUsed);
+            System.out.printf("%.2f",efficency);
+        }
+    }
+}
 
 //q-4
 // class s2{
