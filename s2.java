@@ -84,6 +84,28 @@ import java.util.*;
 
 //q-8
 
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int r=sc.nextInt();
+//         int c=sc.nextInt();
+//         int arr[][]=new int[r][c];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int sum=0;
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 sum+=arr[i][j];
+//             }
+//         }
+//         System.out.println("the sum is:"+sum);
+//     }
+// }
+
+//q-15
 class s2{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -95,12 +117,13 @@ class s2{
                 arr[i][j]=sc.nextInt();
             }
         }
-        int sum=0;
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                sum+=arr[i][j];
+        for(int i=0;i<arr.length;i++){
+            int rowsum=0;
+            for(int j=0;j<arr[i].length;j++){
+                rowsum+=arr[i][j];  
             }
+            System.out.println(rowsum);
         }
-        System.out.println("the sum is:"+sum);
     }
 }
+
