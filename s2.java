@@ -64,20 +64,43 @@ import java.util.*;
 //q-6
 
 //q-7
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.next();
+//         String rev="";
+//         String temp=s;
+//         for(int i=s.length()-1;i>=0;i--){
+//             rev+=s.charAt(i);
+//         }
+//         if(temp.equals(rev)){
+//             System.out.println("Pallindrome");
+//         }
+//         else{
+//             System.out.println("Not Pallindrome");
+//         }
+//     }
+// }
+
+//q-8
+
 class s2{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s=sc.next();
-        String rev="";
-        String temp=s;
-        for(int i=s.length()-1;i>=0;i--){
-            rev+=s.charAt(i);
+        int r=sc.nextInt();
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
         }
-        if(temp.equals(rev)){
-            System.out.println("Pallindrome");
+        int sum=0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                sum+=arr[i][j];
+            }
         }
-        else{
-            System.out.println("Not Pallindrome");
-        }
+        System.out.println("the sum is:"+sum);
     }
 }
