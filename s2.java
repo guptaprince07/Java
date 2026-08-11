@@ -189,51 +189,51 @@ import java.util.*;
 // }
 
 //q-9
-abstract class Shape{
-     public abstract double area();
-}
+// abstract class Shape{
+//      public abstract double area();
+// }
 
-class Circle extends Shape{
-    private double r;
-    public Circle(double r){
-        this.r=r;
-    }
-    public double area(){
-        return 3.14*r*r;
-    }
-}
+// class Circle extends Shape{
+//     private double r;
+//     public Circle(double r){
+//         this.r=r;
+//     }
+//     public double area(){
+//         return 3.14*r*r;
+//     }
+// }
 
-class Rectangle extends Shape{
-    private double l;
-    private double b;
-    public Rectangle(double l,double b){
-        this.l=l;
-        this.b=b;
-    }
-    public double area(){
-        return l*b;
-    }
-}
+// class Rectangle extends Shape{
+//     private double l;
+//     private double b;
+//     public Rectangle(double l,double b){
+//         this.l=l;
+//         this.b=b;
+//     }
+//     public double area(){
+//         return l*b;
+//     }
+// }
 
-class s2{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        Shape shape=null;
-        if(n==1){
-            double r=sc.nextDouble();
-            shape=new Circle(r);
-        }
-        else if(n==2){
-            double l=sc.nextInt();
-            double b=sc.nextInt();
-            shape=new Rectangle(l, b);
-        }
-        if(shape!=null){
-            System.out.printf("%.2f\n",shape.area());
-        }
-    }
-}
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         Shape shape=null;
+//         if(n==1){
+//             double r=sc.nextDouble();
+//             shape=new Circle(r);
+//         }
+//         else if(n==2){
+//             double l=sc.nextInt();
+//             double b=sc.nextInt();
+//             shape=new Rectangle(l, b);
+//         }
+//         if(shape!=null){
+//             System.out.printf("%.2f\n",shape.area());
+//         }
+//     }
+// }
 //q-15
 // class s2{
 //     public static void main(String[] args) {
@@ -256,3 +256,53 @@ class s2{
 //     }
 // }
 
+//q -diagonal sum
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int r=sc.nextInt();
+//         int c=sc.nextInt();
+//         int arr[][]=new int[r][c];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int leftsum=0;
+//         int rightsum=0;
+//         for(int i=0;i<r;i++){
+//                 leftsum+=arr[i][i];
+//                 rightsum+=arr[i][c-1-i];
+//             }
+//         System.out.println("main diagonal"+leftsum);
+//         System.out.println("sec "+rightsum);
+//     }
+// }
+
+//q-tranpose
+
+class s2{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int r=sc.nextInt();
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        int trans[][]=new int[c][r];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                trans[j][i]=arr[i][j];
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(trans[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
