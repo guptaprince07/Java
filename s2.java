@@ -96,55 +96,55 @@ import java.util.*;
 
 //q-5
 //q-6
-class Employee {
-    protected double baseSalary;
+// class Employee {
+//     protected double baseSalary;
 
-    public Employee(double baseSalary) {
-        this.baseSalary = baseSalary;
-    }
-    public double calculateSalary() {
-        return baseSalary;
-    }
-}
-class Manager extends Employee {
-    public Manager(double baseSalary) {
-        super(baseSalary);
-    }
-    @Override
-    public double calculateSalary() {
-        return baseSalary + 5000;
-    }
-}
-class Developer extends Employee {
-    private int projects;
-    public Developer(double baseSalary, int projects) {
-        super(baseSalary);
-        this.projects = projects;
-    }
-    @Override
-    public double calculateSalary() {
-        return baseSalary + (projects * 2000);
-    }
-}
+//     public Employee(double baseSalary) {
+//         this.baseSalary = baseSalary;
+//     }
+//     public double calculateSalary() {
+//         return baseSalary;
+//     }
+// }
+// class Manager extends Employee {
+//     public Manager(double baseSalary) {
+//         super(baseSalary);
+//     }
+//     @Override
+//     public double calculateSalary() {
+//         return baseSalary + 5000;
+//     }
+// }
+// class Developer extends Employee {
+//     private int projects;
+//     public Developer(double baseSalary, int projects) {
+//         super(baseSalary);
+//         this.projects = projects;
+//     }
+//     @Override
+//     public double calculateSalary() {
+//         return baseSalary + (projects * 2000);
+//     }
+// }
 
-public class s2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+// public class s2 {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        int choice = sc.nextInt();
-        double baseSalary = sc.nextDouble();
-        Employee emp = null;
-        if (choice == 1) {
-            emp = new Manager(baseSalary);
-        } else if (choice == 2) {
-            int projects = sc.nextInt();
-            emp = new Developer(baseSalary, projects);
-        }
-        if (emp != null) {
-            System.out.println(emp.calculateSalary());
-        }
-    }
-}
+//         int choice = sc.nextInt();
+//         double baseSalary = sc.nextDouble();
+//         Employee emp = null;
+//         if (choice == 1) {
+//             emp = new Manager(baseSalary);
+//         } else if (choice == 2) {
+//             int projects = sc.nextInt();
+//             emp = new Developer(baseSalary, projects);
+//         }
+//         if (emp != null) {
+//             System.out.println(emp.calculateSalary());
+//         }
+//     }
+// }
 
 //q-7
 // class s2{
@@ -188,6 +188,52 @@ public class s2 {
 //     }
 // }
 
+//q-9
+abstract class Shape{
+     public abstract double area();
+}
+
+class Circle extends Shape{
+    private double r;
+    public Circle(double r){
+        this.r=r;
+    }
+    public double area(){
+        return 3.14*r*r;
+    }
+}
+
+class Rectangle extends Shape{
+    private double l;
+    private double b;
+    public Rectangle(double l,double b){
+        this.l=l;
+        this.b=b;
+    }
+    public double area(){
+        return l*b;
+    }
+}
+
+class s2{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        Shape shape=null;
+        if(n==1){
+            double r=sc.nextDouble();
+            shape=new Circle(r);
+        }
+        else if(n==2){
+            double l=sc.nextInt();
+            double b=sc.nextInt();
+            shape=new Rectangle(l, b);
+        }
+        if(shape!=null){
+            System.out.printf("%.2f\n",shape.area());
+        }
+    }
+}
 //q-15
 // class s2{
 //     public static void main(String[] args) {
