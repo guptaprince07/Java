@@ -281,26 +281,59 @@ import java.util.*;
 
 //q-tranpose
 
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int r=sc.nextInt();
+//         int c=sc.nextInt();
+//         int arr[][]=new int[r][c];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int trans[][]=new int[c][r];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 trans[j][i]=arr[i][j];
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 System.out.print(trans[i][j]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }   
+
+//q- sum of two matrix
 class s2{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int r=sc.nextInt();
-        int c=sc.nextInt();
-        int arr[][]=new int[r][c];
+        int r=2;
+        int c=2;
+        int matA[][]=new int[r][c];
+        int matB[][]=new int[r][c];
+        int sum[][]=new int [r][c];
         for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
-        int trans[][]=new int[c][r];
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                trans[j][i]=arr[i][j];
+                matA[i][j]=sc.nextInt();
             }
         }
         for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
-                System.out.print(trans[i][j]+" ");
+                matB[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+               sum[i][j]=matA[i][j]+matB[i][j];
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(sum[i][j]+" ");
             }
             System.out.println();
         }
