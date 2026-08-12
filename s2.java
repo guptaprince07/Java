@@ -308,34 +308,51 @@ import java.util.*;
 // }   
 
 //q- sum of two matrix
-class s2{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int r=2;
-        int c=2;
-        int matA[][]=new int[r][c];
-        int matB[][]=new int[r][c];
-        int sum[][]=new int [r][c];
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                matA[i][j]=sc.nextInt();
-            }
-        }
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                matB[i][j]=sc.nextInt();
-            }
-        }
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-               sum[i][j]=matA[i][j]+matB[i][j];
-            }
-        }
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                System.out.print(sum[i][j]+" ");
-            }
-            System.out.println();
-        }
-    }
-}
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int r=2;
+//         int c=2;
+//         int matA[][]=new int[r][c];
+//         int matB[][]=new int[r][c];
+//         int sum[][]=new int [r][c];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 matA[i][j]=sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 matB[i][j]=sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                sum[i][j]=matA[i][j]+matB[i][j];
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 System.out.print(sum[i][j]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// class s2{
+//     public static void main(String []args){
+//         Scanner sc=new Scanner(System.in);
+//         String sentence=sc.nextLine();
+//         String words[]=sentence.split(" ");
+//         StringBuilder res=new StringBuilder();
+//         for(int i=0;i<words.length;i++){
+//             StringBuilder word=new StringBuilder(words[i]);
+//             res.append(word.reverse());
+//             if(i<words.length-1){
+//                 res.append(" ");
+//             }
+//         }
+//         System.out.println(res);
+//     }
+// }
