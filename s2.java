@@ -393,18 +393,54 @@ import java.util.*;
 //     }
 // }
 
+// class s2{
+//     public static void main(String[] args) {
+//         String text=new String("programming");
+//         char ch[]=text.toCharArray();
+//         StringBuilder res=new StringBuilder();
+//         boolean seen[]=new boolean[256];
+//         for(int i=0;i<ch.length;i++){
+//             if(!seen[ch[i]]){
+//                 res.append(ch[i]);
+//                 seen[ch[i]]=true;
+//             }
+//         }
+//         System.out.println(res.toString());
+//     }
+// }
+
+// class s2{
+//     public static void main(String[] args) {
+//         String s1=new String("aaabccdddd");
+//         char ch[]=s1.toCharArray();
+//         Arrays.sort(ch);
+//         StringBuilder res=new StringBuilder();
+//         int count=1;
+//         for(int i=0;i<ch.length;i++){
+//             if( i<ch.length-1 &&ch[i]==ch[i+1]){
+//                 count++;
+//             }
+//             else{
+//                 res.append(ch[i]).append(count);
+//                 count=1;
+//             }
+//         }
+//         System.out.println(res.toString());
+//     }
+// }
 class s2{
     public static void main(String[] args) {
-        String text=new String("programming");
-        char ch[]=text.toCharArray();
-        StringBuilder res=new StringBuilder();
-        boolean seen[]=new boolean[256];
-        for(int i=0;i<ch.length;i++){
-            if(!seen[ch[i]]){
-                res.append(ch[i]);
-                seen[ch[i]]=true;
-            }
-        }
-        System.out.println(res.toString());
+        String java="i love javaa";
+String arr[]=java.split(" ");
+String largest="";
+int count=0;
+for(int i=0;i<arr.length;i++){
+    if(arr[i].length()>largest.length()){
+        largest=arr[i];
+        count=arr[i].length();
+    }
+}
+System.out.println(count);
+
     }
 }
