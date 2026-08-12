@@ -376,19 +376,35 @@ import java.util.*;
 //     }
 // }
 
+// class s2{
+//     public static void main(String[] args) {
+//         String s1=new String("earth");
+//         String s2=new String("heart");
+//         char a[]=s1.toCharArray();
+//         char b[]=s2.toCharArray();
+//         Arrays.sort(a);
+//         Arrays.sort(b);
+//         if(Arrays.equals(a,b)){
+//             System.out.println("anagram");
+//         }
+//         else{
+//             System.out.println("not anagram");
+//         }
+//     }
+// }
+
 class s2{
     public static void main(String[] args) {
-        String s1=new String("earth");
-        String s2=new String("heart");
-        char a[]=s1.toCharArray();
-        char b[]=s2.toCharArray();
-        Arrays.sort(a);
-        Arrays.sort(b);
-        if(Arrays.equals(a,b)){
-            System.out.println("anagram");
+        String text=new String("programming");
+        char ch[]=text.toCharArray();
+        StringBuilder res=new StringBuilder();
+        boolean seen[]=new boolean[256];
+        for(int i=0;i<ch.length;i++){
+            if(!seen[ch[i]]){
+                res.append(ch[i]);
+                seen[ch[i]]=true;
+            }
         }
-        else{
-            System.out.println("not anagram");
-        }
+        System.out.println(res.toString());
     }
 }
