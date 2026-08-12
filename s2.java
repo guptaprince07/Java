@@ -356,3 +356,39 @@ import java.util.*;
 //         System.out.println(res);
 //     }
 // }
+
+
+// class s2{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         String words[]=s.split(" ");
+//         StringBuilder res=new StringBuilder();
+//         int n=words.length;
+//         for(int i=0;i<n;i++){
+//             StringBuilder word=new StringBuilder(words[i]);
+//             res.append(word.reverse());
+//             if(i<n-1){
+//                 res.append(" ");
+//             }
+//         }
+//         System.out.println(res);
+//     }
+// }
+
+class s2{
+    public static void main(String[] args) {
+        String s1=new String("earth");
+        String s2=new String("heart");
+        char a[]=s1.toCharArray();
+        char b[]=s2.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        if(Arrays.equals(a,b)){
+            System.out.println("anagram");
+        }
+        else{
+            System.out.println("not anagram");
+        }
+    }
+}
