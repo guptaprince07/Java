@@ -1618,24 +1618,25 @@ import java.util.*;
 // }
 
 //q-1672
-class Solution {
-    public int maximumWealth(int[][] accounts) {
-        int n=accounts.length;
-        int m=accounts[0].length;
-        int rSums[]=new int[n];
-        for(int i=0;i<n;i++){
-            int rsum=0;
-            for(int j=0;j<m;j++){
-                rsum+=accounts[i][j];
-            }
-            rSums[i]=rsum;
-        }
-        int max=0;
-        for(int i=0;i<n;i++){
-                if(rSums[i]>max){
-                    max=rSums[i];
-                }
-            }
-        return max;
-    }
-}
+// class Solution {
+//     public int maximumWealth(int[][] accounts) {
+//         int n=accounts.length;
+//         int m=accounts[0].length;
+//         int rSums[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             int rsum=0;
+//             for(int j=0;j<m;j++){
+//                 rsum+=accounts[i][j];
+//             }
+//             rSums[i]=rsum;
+//         }
+//         int max=0;
+//         for(int i=0;i<n;i++){
+//                 if(rSums[i]>max){
+//                     max=rSums[i];
+//                 }
+//             }
+//         return max;
+//     }
+// }
+
