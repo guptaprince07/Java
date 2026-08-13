@@ -1640,9 +1640,9 @@ import java.util.*;
 //     }
 // }
 
-class Solution {
-    public long countFairPairs(int[] nums, int lower, int upper) {
-        // int n=nums.length;
+// class Solution {
+//     public long countFairPairs(int[] nums, int lower, int upper) {
+         // int n=nums.length;
         // int sum=0;
         // long count=0;
         // for(int i=0;i<n;i++){
@@ -1654,17 +1654,17 @@ class Solution {
         //     }
         // }
         // return count;
-        Arrays.sort(nums);
-        return count(nums,upper)-count(nums,lower-1);}
-        private long count(int[] nums, int val) {
-        long res = 0;
-        for (int l = 0, r = nums.length - 1; l < r; ) {
-            if (nums[l] + nums[r] <= val) {
-                res += (r - l++);
-            } else {
-                r--;
-            }
-        }
-        return res;
-    }
-}
+//         Arrays.sort(nums);
+//         return count(nums,upper)-count(nums,lower-1);}
+//         private long count(int[] nums, int val) {
+//         long res = 0;
+//         for (int l = 0, r = nums.length - 1; l < r; ) {
+//             if (nums[l] + nums[r] <= val) {
+//                 res += (r - l++);
+//             } else {
+//                 r--;
+//             }
+//         }
+//         return res;
+//     }
+// }
