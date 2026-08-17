@@ -1721,6 +1721,4 @@ import java.util.*;
 //     }
 // }
 //create class where you had to create a custom exception
-
-
-
+// 507. Perfect Number
