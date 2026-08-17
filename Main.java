@@ -1699,3 +1699,4 @@ class Solution {
     }
 }
 //create class where you had to create a custom exception
+
