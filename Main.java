@@ -1724,19 +1724,32 @@ import java.util.*;
 // 507. Perfect Number
 
 
+// class Main {
+//     public int maxSubArray(int[] nums) {
+//         int n=nums.length;
+//         int maxs=0;
+//         int maxs1=nums[0];
+//         for(int i=0;i<n;i++){
+//             if(maxs<0){
+//                 maxs=0;
+//             }
+//             maxs+=nums[i];
+//             if(maxs>maxs1){
+//                 maxs1=maxs;
+//             }   
+//     }
+//     return maxs1;
+// }}
+
 class Main {
-    public int maxSubArray(int[] nums) {
-        int n=nums.length;
-        int maxs=0;
-        int maxs1=nums[0];
-        for(int i=0;i<n;i++){
-            if(maxs<0){
-                maxs=0;
+    public boolean hasAlternatingBits(int n) {
+        String bin=Integer.toBinaryString(n);
+        int len=bin.length();
+        for(int i=0;i<len-1;i++){
+            if(bin.charAt(i)==bin.charAt(i+1)){
+                return false;
             }
-            maxs+=nums[i];
-            if(maxs>maxs1){
-                maxs1=maxs;
-            }   
+        }
+        return true;
     }
-    return maxs1;
-}}
+}
