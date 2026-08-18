@@ -1722,3 +1722,21 @@ import java.util.*;
 // }
 //create class where you had to create a custom exception
 // 507. Perfect Number
+
+
+class Main {
+    public int maxSubArray(int[] nums) {
+        int n=nums.length;
+        int maxs=0;
+        int maxs1=nums[0];
+        for(int i=0;i<n;i++){
+            if(maxs<0){
+                maxs=0;
+            }
+            maxs+=nums[i];
+            if(maxs>maxs1){
+                maxs1=maxs;
+            }   
+    }
+    return maxs1;
+}}
