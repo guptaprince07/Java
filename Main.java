@@ -1741,15 +1741,15 @@ import java.util.*;
 //     return maxs1;
 // }}
 
-class Main {
-    public boolean hasAlternatingBits(int n) {
-        String bin=Integer.toBinaryString(n);
-        int len=bin.length();
-        for(int i=0;i<len-1;i++){
-            if(bin.charAt(i)==bin.charAt(i+1)){
-                return false;
-            }
-        }
-        return true;
-    }
-}
+// class Main {
+//     public boolean hasAlternatingBits(int n) {
+//         String bin=Integer.toBinaryString(n);
+//         int len=bin.length();
+//         for(int i=0;i<len-1;i++){
+//             if(bin.charAt(i)==bin.charAt(i+1)){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// }
