@@ -1763,25 +1763,43 @@ import java.util.*;
 //     }
 // }
 
+// class Main{
+//         public static void main(String[] args) {
+//                 Scanner sc=new Scanner(System.in);
+//                 int r=sc.nextInt();
+//                 int c=sc.nextInt();
+//                 int arr[][]=new int[r][c];
+//                 for(int i=0;i<r;i++){
+//                         for(int j=0;j<c;j++){
+//                         arr[i][j]=sc.nextInt();
+//                         }
+//                 }
+//                 int leftsum=0;
+//                 int rightsum=0;
+//                 int n=arr.length;
+//                 for(int i=0;i<n;i++){
+//                         leftsum+=arr[i][i];
+//                         rightsum+=arr[i][n-1-i];
+//                 }
+//                 System.out.println(leftsum);
+//                 System.out.println(rightsum);
+//         }
+// }
+
 class Main{
         public static void main(String[] args) {
                 Scanner sc=new Scanner(System.in);
-                int r=sc.nextInt();
-                int c=sc.nextInt();
-                int arr[][]=new int[r][c];
-                for(int i=0;i<r;i++){
-                        for(int j=0;j<c;j++){
-                        arr[i][j]=sc.nextInt();
-                        }
+                String s1=sc.next();
+                String s2=sc.next();
+                char a[]=s1.toCharArray();
+                char b[]=s2.toCharArray();
+                Arrays.sort(a);
+                Arrays.sort(b);
+                if(Arrays.equals(a,b)){
+                        System.out.println("Anagram");
                 }
-                int leftsum=0;
-                int rightsum=0;
-                int n=arr.length;
-                for(int i=0;i<n;i++){
-                        leftsum+=arr[i][i];
-                        rightsum+=arr[i][n-1-i];
+                else{
+                        System.out.println("Not Anargram");
                 }
-                System.out.println(leftsum);
-                System.out.println(rightsum);
         }
 }
