@@ -1838,3 +1838,15 @@ import java.util.*;
 //                 }
 //         }
 // }
+
+//ArrayList
+class Main{
+        public static void main(String[] args) {
+                ArrayList<Integer>list=new ArrayList<>();
+                ArrayList<String>list2=new ArrayList<>();
+                list.add(1);
+                list.add(4);
+                list.add(7);
+                System.out.println(list);
+        }
+}
