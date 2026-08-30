@@ -1848,5 +1848,8 @@ class Main{
                 list.add(4);
                 list.add(7);
                 System.out.println(list);
+                //get element
+                int ele=list.get(1);
+                System.out.println(ele);
         }
 }
