@@ -1840,36 +1840,51 @@ import java.util.*;
 // }
 
 //ArrayList
-class Main{
-        public static void main(String[] args) {
-                ArrayList<Integer>list=new ArrayList<>();
-                ArrayList<String>list2=new ArrayList<>();
-                list.add(1);
-                list.add(78);
-                list.add(7);
-                System.out.println(list);
-                //get element
-                int ele=list.get(1);
-                System.out.println(ele);
-                //add ele in between
-                list.add(3,10); //(index,ele);
-                System.out.println(list);
-                //set ele
-                list.set(2,4);
-                System.out.println(list);
-                //delete ele
-                list.remove(0); //index which is to be removed
-                System.out.println(list);
-                //size
-                int size=list.size();
-                System.out.println(size);
-                //loops
-                for(int i=0;i<size;i++){
-                        System.out.println(list.get(i));
-                }
-                System.out.println();
+// class Main{
+//         public static void main(String[] args) {
+//                 ArrayList<Integer>list=new ArrayList<>();
+//                 ArrayList<String>list2=new ArrayList<>();
+//                 list.add(1);
+//                 list.add(78);
+//                 list.add(7);
+//                 System.out.println(list);
+//                 //get element
+//                 int ele=list.get(1);
+//                 System.out.println(ele);
+//                 //add ele in between
+//                 list.add(3,10); //(index,ele);
+//                 System.out.println(list);
+//                 //set ele
+//                 list.set(2,4);
+//                 System.out.println(list);
+//                 //delete ele
+//                 list.remove(0); //index which is to be removed
+//                 System.out.println(list);
+//                 //size
+//                 int size=list.size();
+//                 System.out.println(size);
+//                 //loops
+//                 for(int i=0;i<size;i++){
+//                         System.out.println(list.get(i));
+//                 }
+//                 System.out.println();
 
-                Collections.sort(list);
-                System.out.println(list);
+//                 Collections.sort(list);
+//                 System.out.println(list);
+//         }
+// }
+
+//LinkList
+class LL{
+        class Node{
+                String data;
+                Node next;
+        Node(String data){
+                this.data=data;
+                this.next=null;
+        }
+}
+        public static void main(String args[]){
+                
         }
 }
