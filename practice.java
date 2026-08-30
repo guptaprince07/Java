@@ -1135,10 +1135,10 @@ import java.util.*;
 // }
 
 //q-1464 
-class Solution{
-    public int maxProduct(int []nums){
-        Arrays.sort(nums);
-        int n=nums.length;
-        return (nums[n-1]-1)*(nums[n-2]-1);
-    }
-}
+// class Solution{
+//     public int maxProduct(int []nums){
+//         Arrays.sort(nums);
+//         int n=nums.length;
+//         return (nums[n-1]-1)*(nums[n-2]-1);
+//     }
+// }
