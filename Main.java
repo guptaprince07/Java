@@ -1845,7 +1845,7 @@ class Main{
                 ArrayList<Integer>list=new ArrayList<>();
                 ArrayList<String>list2=new ArrayList<>();
                 list.add(1);
-                list.add(4);
+                list.add(78);
                 list.add(7);
                 System.out.println(list);
                 //get element
@@ -1863,5 +1863,13 @@ class Main{
                 //size
                 int size=list.size();
                 System.out.println(size);
+                //loops
+                for(int i=0;i<size;i++){
+                        System.out.println(list.get(i));
+                }
+                System.out.println();
+
+                Collections.sort(list);
+                System.out.println(list);
         }
 }
