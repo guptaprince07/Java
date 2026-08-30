@@ -1854,5 +1854,8 @@ class Main{
                 //add ele in between
                 list.add(3,10); //(index,ele);
                 System.out.println(list);
+                //set ele
+                list.set(2,4);
+                System.out.println(list);
         }
 }
