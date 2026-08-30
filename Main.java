@@ -1851,5 +1851,8 @@ class Main{
                 //get element
                 int ele=list.get(1);
                 System.out.println(ele);
+                //add ele in between
+                list.add(3,10); //(index,ele);
+                System.out.println(list);
         }
 }
