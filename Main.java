@@ -1857,5 +1857,8 @@ class Main{
                 //set ele
                 list.set(2,4);
                 System.out.println(list);
+                //delete ele
+                list.remove(0); //index which is to be removed
+                System.out.println(list);
         }
 }
