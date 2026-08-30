@@ -1121,15 +1121,24 @@ import java.util.*;
 //     }
 // }
 
-class practice{
-    public static void main(String args[]){
-        StringBuilder name= new StringBuilder("Prince");
-        System.out.println(name);
-        System.out.println(name.charAt(4));
-        //insert function
-        name.insert(0,'S');
-        System.out.println(name);
-        name.insert(4,'B');
-        System.out.println(name);
+// class practice{
+//     public static void main(String args[]){
+//         StringBuilder name= new StringBuilder("Prince");
+//         System.out.println(name);
+//         System.out.println(name.charAt(4));
+//         //insert function
+//         name.insert(0,'S');
+//         System.out.println(name);
+//         name.insert(4,'B');
+//         System.out.println(name);
+//     }
+// }
+
+//q-1464 
+class Solution{
+    public int maxProduct(int []nums){
+        Arrays.sort(nums);
+        int n=nums.length;
+        return (nums[n-1]-1)*(nums[n-2]-1);
     }
 }
