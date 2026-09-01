@@ -1239,20 +1239,34 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         try{
+//             int c=a/b;
+//             System.out.println(c);
+//         }
+//         catch(ArithmeticException e){
+//             System.out.println("Cannot divide by zero");
+//         }
+//         finally{
+//             System.out.println("Opeartion Completed");
+//         }
+//     }
+// }
+
 class practice{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        try{
-            int c=a/b;
-            System.out.println(c);
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        ArrayList<Integer>arr=new ArrayList<>();
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            arr.add(sc.nextInt());
         }
-        catch(ArithmeticException e){
-            System.out.println("Cannot divide by zero");
-        }
-        finally{
-            System.out.println("Opeartion Completed");
+        for(int i=n-1;i>=0;i--){
+            System.out.print(arr.get(i)+" ");
         }
     }
 }
