@@ -1198,24 +1198,43 @@ import java.util.*;
 //         }
 //     }
 
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         ArrayList<Integer>arr=new ArrayList<>();
+//         for(int i=0;i<n;i++){
+//             arr.add(sc.nextInt());
+//         }
+//         int max=0;
+//         for(int i=0;i<n;i++){
+//             if(arr.get(i)>max){
+//                 max=arr.get(i);
+//             }
+//         }
+//         for(int i=0;i<n;i++){
+//             System.out.print(arr.get(i) +" ");
+//         }
+//         System.out.println();
+//         System.out.println(max);
+//     }
+// }
+
 class practice{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        ArrayList<Integer>arr=new ArrayList<>();
-        for(int i=0;i<n;i++){
-            arr.add(sc.nextInt());
-        }
-        int max=0;
-        for(int i=0;i<n;i++){
-            if(arr.get(i)>max){
-                max=arr.get(i);
+        int balance=sc.nextInt();
+        int withdraw=sc.nextInt();
+        int rem=0;
+        try{
+            if(withdraw>balance){
+                System.out.println("Insufficent Balance");
+            }
+            if(balance>withdraw){
+                rem=balance-withdraw;
+                System.out.println(rem);
             }
         }
-        for(int i=0;i<n;i++){
-            System.out.print(arr.get(i) +" ");
-        }
-        System.out.println();
-        System.out.println(max);
+        catch(Exception e){}
     }
 }
