@@ -1159,23 +1159,41 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         ArrayList<Integer>arr=new ArrayList<>(Arrays.asList(10,50,20,50,30,40,49));
+//         int n=arr.size();
+//         int max=0;
+//         int smax=0;
+//         for(int i=0;i<n;i++){
+//             if(arr.get(i)>max){
+//                 max=arr.get(i);
+//             }
+//         }
+//         for(int i=0;i<n;i++){
+//             if(arr.get(i)>smax && arr.get(i)!=max){
+//                 smax=arr.get(i);
+//             }
+//         }
+//         System.out.println("max is: "+max);
+//         System.out.println("second max is: "+smax);
+//     }
+// }
+
 class practice{
     public static void main(String[] args) {
-        ArrayList<Integer>arr=new ArrayList<>(Arrays.asList(10,50,20,50,30,40,49));
+        ArrayList<Integer> arr=new ArrayList<>(Arrays.asList(10,20,10,30,20,10));
         int n=arr.size();
-        int max=0;
-        int smax=0;
-        for(int i=0;i<n;i++){
-            if(arr.get(i)>max){
-                max=arr.get(i);
+        int i=0;
+        while(i<n)
+            {int count=0;
+            for(int j=0;j<n;j++){
+                if(arr.get(i).equals(arr.get(j))){
+                    count++;
+                }
             }
+            System.out.println(arr.get(i)+" "+count);
+            i++;
         }
-        for(int i=0;i<n;i++){
-            if(arr.get(i)>smax && arr.get(i)!=max){
-                smax=arr.get(i);
-            }
         }
-        System.out.println("max is: "+max);
-        System.out.println("second max is: "+smax);
     }
-}
