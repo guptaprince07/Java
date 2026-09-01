@@ -1220,21 +1220,39 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int balance=sc.nextInt();
+//         int withdraw=sc.nextInt();
+//         int rem=0;
+//         try{
+//             if(withdraw>balance){
+//                 System.out.println("Insufficent Balance");
+//             }
+//             if(balance>withdraw){
+//                 rem=balance-withdraw;
+//                 System.out.println(rem);
+//             }
+//         }
+//         catch(Exception e){}
+//     }
+// }
+
 class practice{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int balance=sc.nextInt();
-        int withdraw=sc.nextInt();
-        int rem=0;
+        int a=sc.nextInt();
+        int b=sc.nextInt();
         try{
-            if(withdraw>balance){
-                System.out.println("Insufficent Balance");
-            }
-            if(balance>withdraw){
-                rem=balance-withdraw;
-                System.out.println(rem);
-            }
+            int c=a/b;
+            System.out.println(c);
         }
-        catch(Exception e){}
+        catch(ArithmeticException e){
+            System.out.println("Cannot divide by zero");
+        }
+        finally{
+            System.out.println("Opeartion Completed");
+        }
     }
 }
