@@ -1142,3 +1142,19 @@ import java.util.*;
 //         return (nums[n-1]-1)*(nums[n-2]-1);
 //     }
 // }
+
+class practice{
+    public static void main(String[] args) {
+        ArrayList<Integer>arr=new ArrayList<>(Arrays.asList(10, 20, 10, 30, 20, 40));
+        ArrayList<Integer>res=new ArrayList<>();
+        int n=arr.size();
+        int i=0;
+        for(int j=0;j<n;j++){
+            if(arr.get(j)!=arr.get(i)){
+                i++;
+                arr.get(i)=arr.get(j);
+            }
+        }
+        System.out.println(i+1);
+    }
+}
