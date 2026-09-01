@@ -1180,20 +1180,42 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         ArrayList<Integer> arr=new ArrayList<>(Arrays.asList(10,20,10,30,20,10));
+//         int n=arr.size();
+//         int i=0;
+//         while(i<n)
+//             {int count=0;
+//             for(int j=0;j<n;j++){
+//                 if(arr.get(i).equals(arr.get(j))){
+//                     count++;
+//                 }
+//             }
+//             System.out.println(arr.get(i)+" "+count);
+//             i++;
+//         }
+//         }
+//     }
+
 class practice{
     public static void main(String[] args) {
-        ArrayList<Integer> arr=new ArrayList<>(Arrays.asList(10,20,10,30,20,10));
-        int n=arr.size();
-        int i=0;
-        while(i<n)
-            {int count=0;
-            for(int j=0;j<n;j++){
-                if(arr.get(i).equals(arr.get(j))){
-                    count++;
-                }
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        ArrayList<Integer>arr=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            arr.add(sc.nextInt());
+        }
+        int max=0;
+        for(int i=0;i<n;i++){
+            if(arr.get(i)>max){
+                max=arr.get(i);
             }
-            System.out.println(arr.get(i)+" "+count);
-            i++;
         }
+        for(int i=0;i<n;i++){
+            System.out.print(arr.get(i) +" ");
         }
+        System.out.println();
+        System.out.println(max);
     }
+}
