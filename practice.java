@@ -1314,25 +1314,54 @@ import java.util.*;
 // }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         ArrayList<Integer>arr=new ArrayList<>();
+//         int n=sc.nextInt();
+//         for(int i=0;i<n;i++){
+//             arr.add(sc.nextInt());
+//         }
+//         ArrayList<Integer>even=new ArrayList<>();
+//         ArrayList<Integer>odd=new ArrayList<>();
+//         for(int i=0;i<n;i++){
+//             if(arr.get(i)%2==0){
+//                 even.add(arr.get(i));
+//             }
+//             else{
+//                 odd.add(arr.get(i));
+//             }
+//         }
+//         System.out.println(even);
+//         System.out.println(odd);
+//     }
+// }
+
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         ArrayList<Integer>arr=new ArrayList<>();
+//         int n=sc.nextInt();
+//         for(int i=0;i<n;i++){
+//             arr.add(sc.nextInt());
+//         }
+//         for(int i=n-1;i>=0;i--){
+//             System.out.print(arr.get(i)+" ");
+//         }
+//     }
+// }
+
 class practice{
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        ArrayList<Integer>arr=new ArrayList<>();
-        int n=sc.nextInt();
-        for(int i=0;i<n;i++){
-            arr.add(sc.nextInt());
+        ArrayList<Integer>arr=new ArrayList<>(Arrays.asList(1,2,3,5,6,7,8,9,10));
+        int n=arr.size()+1;
+        int totals=((n)*(n+1))/2;
+        int sum=0;
+        int num=0;
+        for(int i=0;i<n-1;i++){
+            sum+=arr.get(i);
         }
-        ArrayList<Integer>even=new ArrayList<>();
-        ArrayList<Integer>odd=new ArrayList<>();
-        for(int i=0;i<n;i++){
-            if(arr.get(i)%2==0){
-                even.add(arr.get(i));
-            }
-            else{
-                odd.add(arr.get(i));
-            }
-        }
-        System.out.println(even);
-        System.out.println(odd);
+        num=totals-sum;
+        System.out.println(num);
     }
 }
