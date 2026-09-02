@@ -1366,21 +1366,33 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         ArrayList<Integer>arr=new ArrayList<>(Arrays.asList(45, 12, 78, 23, 9, 56));
+//         int max=arr.get(0);
+//         int min=arr.get(0);
+//         int n=arr.size();
+//         for(int i=0;i<n;i++){
+//             if(arr.get(i)>max){
+//                 max=arr.get(i);
+//             }
+//             if(arr.get(i)<min){
+//                 min=arr.get(i);
+//             }
+//         }
+//         System.out.println("max is: "+max);
+//         System.out.println("min is: "+min);
+//     }
+// }
+
 class practice{
     public static void main(String[] args) {
-        ArrayList<Integer>arr=new ArrayList<>(Arrays.asList(45, 12, 78, 23, 9, 56));
-        int max=arr.get(0);
-        int min=arr.get(0);
-        int n=arr.size();
-        for(int i=0;i<n;i++){
-            if(arr.get(i)>max){
-                max=arr.get(i);
-            }
-            if(arr.get(i)<min){
-                min=arr.get(i);
-            }
-        }
-        System.out.println("max is: "+max);
-        System.out.println("min is: "+min);
+        LinkedList<Integer>lkd=new LinkedList<>();
+        lkd.add(1);
+        lkd.add(3);
+        lkd.add(4);
+        lkd.addFirst(174);
+        lkd.addLast(69);
+        System.out.println(lkd);
     }
 }
