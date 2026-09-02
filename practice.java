@@ -1289,6 +1289,31 @@ import java.util.*;
 //     }
 // }
 
+// class practice{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         ArrayList<Integer>arr=new ArrayList<>();
+//         int n=sc.nextInt();
+//         for(int i=0;i<n;i++){
+//             arr.add(sc.nextInt());
+//         }
+//         Collections.sort(arr);
+//         try{
+//         int sum=0;
+//         for(int i=0;i<n;i++){
+//             if(arr.get(i)>0){
+//                 sum+=arr.get(i);
+//             }
+//             else if(arr.get(i)<0){
+//                 System.out.println("Invalid quantity: "+arr.get(i));
+//             }
+//         }
+//         System.out.println(sum);
+//     }
+//     catch(Exception e){}
+// }
+// }
+
 class practice{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -1297,19 +1322,17 @@ class practice{
         for(int i=0;i<n;i++){
             arr.add(sc.nextInt());
         }
-        Collections.sort(arr);
-        try{
-        int sum=0;
+        ArrayList<Integer>even=new ArrayList<>();
+        ArrayList<Integer>odd=new ArrayList<>();
         for(int i=0;i<n;i++){
-            if(arr.get(i)>0){
-                sum+=arr.get(i);
+            if(arr.get(i)%2==0){
+                even.add(arr.get(i));
             }
-            else if(arr.get(i)<0){
-                System.out.println("Invalid quantity: "+arr.get(i));
+            else{
+                odd.add(arr.get(i));
             }
         }
-        System.out.println(sum);
+        System.out.println(even);
+        System.out.println(odd);
     }
-    catch(Exception e){}
-}
 }
