@@ -1920,10 +1920,13 @@ class Main{
                 marks.put("ABC",90);
                 marks.put("PS",95);
                 marks.put("QWERTY",89);
+                //agar dono key and values ko iterate akrna then use entry set
                 for(Map.Entry<String,Integer>entry:marks.entrySet()){
                         System.out.println(entry.getKey());
                         System.out.println(entry.getValue());
                 }
+                //agar sirf keys pe karne then .keySet()
+                //agar sirf values pe karne then .Values()
                 for(String i:marks.keySet()){
                         System.out.println(i +" "+ marks.get(i));
                 }
