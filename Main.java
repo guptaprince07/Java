@@ -1934,18 +1934,27 @@ import java.util.*;
 // }
 
 //write a java programe to find the frequency of each element in array using hashmap
+// class Main{
+//         public static void main(String[] args) {
+//                 Map<Integer,Integer>freq=new HashMap<>();
+//                 int arr[]={10,10,20,30};
+//                 for(int i=0;i<arr.length;i++){
+//                         if(freq.get(arr[i])==null){
+//                                 freq.put(arr[i],1);
+//                         }
+//                         else{
+//                                 freq.put(arr[i],freq.get(arr[i])+1);
+//                         }
+//                 }
+//                 System.out.println(freq);
+//         }
+// }
+
+//first non repeating character given a string 
+//write a java program using a hashmap to find first char that appears only once
+
 class Main{
         public static void main(String[] args) {
-                Map<Integer,Integer>freq=new HashMap<>();
-                int arr[]={10,10,20,30};
-                for(int i=0;i<arr.length;i++){
-                        if(freq.get(arr[i])==null){
-                                freq.put(arr[i],1);
-                        }
-                        else{
-                                freq.put(arr[i],freq.get(arr[i])+1);
-                        }
-                }
-                System.out.println(freq);
+                
         }
 }
