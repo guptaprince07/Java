@@ -1899,17 +1899,29 @@ import java.util.*;
 // }
 
 //MAp
+// class Main{
+//         public static void main(String[] args) {
+//                 Map<Integer,String>map=new HashMap<>();
+//                 map.put(1,"XYZ");
+//                 map.put(2, "ABC");
+//                 map.put(3,"PSGB");
+//                 // String abc="qwerty";
+//                 // System.out.println(abc.hashCode());
+//                 System.out.println(map.get(3));
+//                 for(Integer i:map.keySet()){
+//                         System.out.println("key is "+i +" value is "+map.get(i));
+//                 }
+//         }
+// }
+
 class Main{
         public static void main(String[] args) {
-                Map<Integer,String>map=new HashMap<>();
-                map.put(1,"XYZ");
-                map.put(2, "ABC");
-                map.put(3,"PSGB");
-                // String abc="qwerty";
-                // System.out.println(abc.hashCode());
-                System.out.println(map.get(3));
-                for(Integer i:map.keySet()){
-                        System.out.println("key is "+i +" value is "+map.get(i));
+                Map<String,Integer>marks=new HashMap<>();
+                marks.put("ABC",90);
+                marks.put("PS",95);
+                marks.put("QWERTY",89);
+                for(String i:marks.keySet()){
+                        System.out.println(i +" "+ marks.get(i));
                 }
         }
 }
