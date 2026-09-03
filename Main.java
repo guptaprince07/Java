@@ -1905,6 +1905,11 @@ class Main{
                 map.put(1,"XYZ");
                 map.put(2, "ABC");
                 map.put(3,"PSGB");
-                
+                // String abc="qwerty";
+                // System.out.println(abc.hashCode());
+                System.out.println(map.get(3));
+                for(Integer i:map.keySet()){
+                        System.out.println("key is "+i +" value is "+map.get(i));
+                }
         }
 }
