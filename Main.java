@@ -1920,6 +1920,10 @@ class Main{
                 marks.put("ABC",90);
                 marks.put("PS",95);
                 marks.put("QWERTY",89);
+                for(Map.Entry<String,Integer>entry:marks.entrySet()){
+                        System.out.println(entry.getKey());
+                        System.out.println(entry.getValue());
+                }
                 for(String i:marks.keySet()){
                         System.out.println(i +" "+ marks.get(i));
                 }
