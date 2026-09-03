@@ -1898,3 +1898,13 @@ import java.util.*;
 //         }
 // }
 
+//MAp
+class Main{
+        public static void main(String[] args) {
+                Map<Integer,String>map=new HashMap<>();
+                map.put(1,"XYZ");
+                map.put(2, "ABC");
+                map.put(3,"PSGB");
+                
+        }
+}
