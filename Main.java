@@ -1914,21 +1914,38 @@ import java.util.*;
 //         }
 // }
 
+// class Main{
+//         public static void main(String[] args) {
+//                 Map<String,Integer>marks=new HashMap<>();
+//                 marks.put("ABC",90);
+//                 marks.put("PS",95);
+//                 marks.put("QWERTY",89);
+//                 //agar dono key and values ko iterate akrna then use entry set
+//                 for(Map.Entry<String,Integer>entry:marks.entrySet()){
+//                         System.out.println(entry.getKey());
+//                         System.out.println(entry.getValue());
+//                 }
+//                 //agar sirf keys pe karne then .keySet()
+//                 //agar sirf values pe karne then .Values()
+//                 for(String i:marks.keySet()){
+//                         System.out.println(i +" "+ marks.get(i));
+//                 }
+//         }
+// }
+
+//write a java programe to find the frequency of each element in array using hashmap
 class Main{
         public static void main(String[] args) {
-                Map<String,Integer>marks=new HashMap<>();
-                marks.put("ABC",90);
-                marks.put("PS",95);
-                marks.put("QWERTY",89);
-                //agar dono key and values ko iterate akrna then use entry set
-                for(Map.Entry<String,Integer>entry:marks.entrySet()){
-                        System.out.println(entry.getKey());
-                        System.out.println(entry.getValue());
+                Map<Integer,Integer>freq=new HashMap<>();
+                int arr[]={10,10,20,30};
+                for(int i=0;i<arr.length;i++){
+                        if(freq.get(arr[i])==null){
+                                freq.put(arr[i],1);
+                        }
+                        else{
+                                freq.put(arr[i],freq.get(arr[i])+1);
+                        }
                 }
-                //agar sirf keys pe karne then .keySet()
-                //agar sirf values pe karne then .Values()
-                for(String i:marks.keySet()){
-                        System.out.println(i +" "+ marks.get(i));
-                }
+                System.out.println(freq);
         }
 }
