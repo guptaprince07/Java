@@ -2049,18 +2049,36 @@ import java.util.*;
 //         }
 // }
 
+// class Main{
+//         public static void main(String[] args) {
+//                 Scanner sc=new Scanner(System.in);
+//                 int n=sc.nextInt();
+//                 sc.nextLine();
+//                 HashMap<String,Integer>map=new HashMap<>();
+//                 for(int i=0;i<n;i++){
+//                         String country=sc.nextLine();
+//                         int pop=sc.nextInt();
+//                         map.put(country,pop);
+//                         sc.nextLine();
+//                 }
+//                 System.out.println(map);
+//         }
+// }
+
 class Main{
         public static void main(String[] args) {
                 Scanner sc=new Scanner(System.in);
+                HashMap<String,Integer>info=new HashMap<>();
                 int n=sc.nextInt();
-                sc.nextLine();
-                HashMap<String,Integer>map=new HashMap<>();
                 for(int i=0;i<n;i++){
-                        String country=sc.nextLine();
-                        int pop=sc.nextInt();
-                        map.put(country,pop);
-                        sc.nextLine();
+                        String name=sc.next();
+                        int marks=sc.nextInt();
+                        info.put(name,marks);
                 }
-                System.out.println(map);
+                int sum=0;
+                for(Map.Entry<String,Integer>e:info.entrySet()){
+                        sum+=e.getValue();
+                }
+                System.out.println("the sum is:"+sum);
         }
 }
