@@ -1999,21 +1999,40 @@ import java.util.*;
 //         }
 // }
 
+// class Main{
+//         public static void main(String args[]){
+//                 Scanner sc=new Scanner(System.in);
+//                 HashSet<Integer> set=new HashSet<>();
+//                 int n=sc.nextInt();
+//                 for(int i=0;i<n;i++){
+//                         set.add(sc.nextInt());
+//                 }
+//                 Iterator<Integer> i=set.iterator();
+//                 int j=2;
+//                 int mul=1;
+//                 while(i.hasNext()){
+//                         int val=i.next();
+//                         mul=j*val;
+//                         System.out.printf("%d * %d= %d\n",j,val,mul);
+//                 }
+//         }
+// }
+
 class Main{
-        public static void main(String args[]){
+        public static void main(String[] args) {
                 Scanner sc=new Scanner(System.in);
-                HashSet<Integer> set=new HashSet<>();
                 int n=sc.nextInt();
+                HashSet<Integer>set=new HashSet<>();
                 for(int i=0;i<n;i++){
                         set.add(sc.nextInt());
                 }
-                Iterator<Integer> i=set.iterator();
-                int j=2;
-                int mul=1;
+                Iterator<Integer>i=set.iterator();
+                int sum=0;
                 while(i.hasNext()){
                         int val=i.next();
-                        mul=j*val;
-                        System.out.printf("%d * %d= %d\n",j,val,mul);
+                        sum+=val;
                 }
+                float avg=(float)sum/set.size();
+                System.out.println("the avg is:"+avg);
         }
 }
