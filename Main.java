@@ -2018,21 +2018,33 @@ import java.util.*;
 //         }
 // }
 
+// class Main{
+//         public static void main(String args[]) {
+//                 Scanner sc=new Scanner(System.in);
+//                 int n=sc.nextInt();
+//                 HashSet<Integer>set=new HashSet<>();
+//                 for(int i=0;i<n;i++){
+//                         set.add(sc.nextInt());
+//                 }
+//                 Iterator<Integer>i=set.iterator();
+//                 int sum=0;
+//                 while(i.hasNext()){
+//                         int val=i.next();
+//                         sum+=val;
+//                 }
+//                 float avg=(float)sum/set.size();
+//                 System.out.println("the avg is:"+avg);
+//         }
+// }
+
+//hashmap
+
 class Main{
         public static void main(String[] args) {
-                Scanner sc=new Scanner(System.in);
-                int n=sc.nextInt();
-                HashSet<Integer>set=new HashSet<>();
-                for(int i=0;i<n;i++){
-                        set.add(sc.nextInt());
-                }
-                Iterator<Integer>i=set.iterator();
-                int sum=0;
-                while(i.hasNext()){
-                        int val=i.next();
-                        sum+=val;
-                }
-                float avg=(float)sum/set.size();
-                System.out.println("the avg is:"+avg);
+                HashMap<String,Integer>map=new HashMap<>();
+                map.put("India",120);
+                map.put("USA",50);
+                map.put("Sri Lanka",20);
+                System.out.println(map);
         }
 }
