@@ -2039,12 +2039,28 @@ import java.util.*;
 
 //hashmap
 
+// class Main{
+//         public static void main(String[] args) {
+//                 HashMap<String,Integer>map=new HashMap<>();
+//                 map.put("India",120);
+//                 map.put("USA",50);
+//                 map.put("Sri Lanka",20);
+//                 System.out.println(map);
+//         }
+// }
+
 class Main{
         public static void main(String[] args) {
+                Scanner sc=new Scanner(System.in);
+                int n=sc.nextInt();
+                sc.nextLine();
                 HashMap<String,Integer>map=new HashMap<>();
-                map.put("India",120);
-                map.put("USA",50);
-                map.put("Sri Lanka",20);
+                for(int i=0;i<n;i++){
+                        String country=sc.nextLine();
+                        int pop=sc.nextInt();
+                        map.put(country,pop);
+                        sc.nextLine();
+                }
                 System.out.println(map);
         }
 }
