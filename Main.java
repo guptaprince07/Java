@@ -1955,24 +1955,30 @@ import java.util.*;
 
 
 //Hash Set
-class Main{
-        public static void main(String[] args) {
-            HashSet<Integer>set=new HashSet<>();
-            set.add(1);
-            set.add(5);
-            set.add(4);
-            set.add(1);//duplicates not allowed in set
+// class Main{
+//         public static void main(String[] args) {
+//             HashSet<Integer>set=new HashSet<>();
+//             set.add(1);
+//             set.add(5);
+//             set.add(4);
+//             set.add(1);//duplicates not allowed in set
             
-            if(set.contains(1)){
-                System.out.println("contains 1");
-            }
-            if(!set.contains(10)){
-                System.out.println("doesn't contain");
-            }
-            set.remove(1);
-            if(!set.contains(1)){
-                System.out.println("deleted");
-            }
-            System.out.println(set.size());
-        }
-}
+//             Iterator it=set.iterator();
+//             while(it.hasNext()){
+//                 System.out.println(it.next());
+//             }
+
+//             if(set.contains(1)){
+//                 System.out.println("contains 1");
+//             }
+//             if(!set.contains(10)){
+//                 System.out.println("doesn't contain");
+//             }
+//             set.remove(1);
+//             if(!set.contains(1)){
+//                 System.out.println("deleted");
+//             }
+//              System.out.println("Size of set is: "+set.size());
+//         }
+// }
+
