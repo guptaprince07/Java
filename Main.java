@@ -1982,19 +1982,38 @@ import java.util.*;
 //         }
 // }
 
+// class Main{
+//         public static void main(String[] args) {
+//                 HashSet<Integer> set=new HashSet<>();
+//                 Scanner sc=new Scanner(System.in);
+//                 int n=sc.nextInt();
+//                 for(int i=0;i<n;i++){
+//                         set.add(sc.nextInt());
+//                 }
+//                 Iterator<Integer> it=set.iterator();
+//                 int sum=0;
+//                 while(it.hasNext()){
+//                         sum+=it.next();
+//                 }
+//                 System.out.println("Sum is:"+sum);
+//         }
+// }
+
 class Main{
-        public static void main(String[] args) {
-                HashSet<Integer> set=new HashSet<>();
+        public static void main(String args[]){
                 Scanner sc=new Scanner(System.in);
+                HashSet<Integer> set=new HashSet<>();
                 int n=sc.nextInt();
                 for(int i=0;i<n;i++){
                         set.add(sc.nextInt());
                 }
-                Iterator<Integer> it=set.iterator();
-                int sum=0;
-                while(it.hasNext()){
-                        sum+=it.next();
+                Iterator<Integer> i=set.iterator();
+                int j=2;
+                int mul=1;
+                while(i.hasNext()){
+                        int val=i.next();
+                        mul=j*val;
+                        System.out.printf("%d * %d= %d\n",j,val,mul);
                 }
-                System.out.println("Sum is:"+sum);
         }
 }
