@@ -166,20 +166,59 @@ import java.util.*;
 //     }
 // }
 
+// class error{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int no=sc.nextInt();
+//         try{
+//             int res=0;
+//             if(no<0){
+//                 throw new IllegalArgumentException();
+//             }
+//             res+=no*no;
+//             System.out.println("sq is: "+res);
+//         }
+//         catch(IllegalArgumentException e){
+//             System.out.println(("Number cannot be negative"));
+//         }
+//     }
+// }
+
+// class error{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.next();
+//         int n=s.length();
+//         try{
+//             if(n<8){
+//                 throw new IllegalArgumentException();
+//             }
+//             System.out.println("Valid Password");
+//         }
+//         catch(IllegalArgumentException e){
+//             System.out.println("Invalid Passowrd");
+//         }
+//     }
+// }
+
 class error{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int no=sc.nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int arr[]={10,20,30};
+        int index=sc.nextInt();
         try{
-            int res=0;
-            if(no<0){
-                throw new IllegalArgumentException();
-            }
-            res+=no*no;
-            System.out.println("sq is: "+res);
+            int c=a/b;
+            System.out.println("res:"+c);
+
+            System.out.println("arr value at index is:"+arr[index]);
         }
-        catch(IllegalArgumentException e){
-            System.out.println(("Number cannot be negative"));
+        catch(ArithmeticException e){
+            System.out.println("can't divide by zero");
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println(e);
         }
     }
 }
