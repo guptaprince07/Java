@@ -78,16 +78,50 @@ import java.util.*;
 //     }
 // }
 
+// class error{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.next();
+//         try{
+//             int i=Integer.parseInt(s);
+//             System.out.println("output: "+i);
+//         }
+//         catch(NumberFormatException e){
+//             System.out.println(e);
+//         }
+//     }
+// }
+
+// class error{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int age=sc.nextInt();
+//         try{
+//             if(age<18){
+//                 throw new IllegalArgumentException();
+//             }
+//             else{
+//                 System.out.println("eligible");
+//             }
+//         }
+//         catch(IllegalArgumentException e){
+//             System.out.println("not eligible");
+//         }
+//     }
+// }
+
 class error{
-    public static void main(String args[]){
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        int marks=sc.nextInt();
         try{
-            int i=Integer.parseInt(s);
-            System.out.println("output: "+i);
+            if(marks<0 || marks>100){
+                throw new IllegalArgumentException();
+            }
+            System.out.println("marks: "+marks);
         }
-        catch(NumberFormatException e){
-            System.out.println(e);
+        catch(IllegalArgumentException e){
+            System.out.println("Invalid marks");
         }
     }
 }
