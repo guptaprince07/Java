@@ -110,18 +110,37 @@ import java.util.*;
 //     }
 // }
 
+// class error{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int marks=sc.nextInt();
+//         try{
+//             if(marks<0 || marks>100){
+//                 throw new IllegalArgumentException();
+//             }
+//             System.out.println("marks: "+marks);
+//         }
+//         catch(IllegalArgumentException e){
+//             System.out.println("Invalid marks");
+//         }
+//     }
+// }
+
 class error{
+     static int div(int a,int b)throws ArithmeticException{
+        return a/b;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int marks=sc.nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
         try{
-            if(marks<0 || marks>100){
-                throw new IllegalArgumentException();
-            }
-            System.out.println("marks: "+marks);
+            int res=div(a, b);
+            System.out.println("result is: "+res);
         }
-        catch(IllegalArgumentException e){
-            System.out.println("Invalid marks");
+        catch(ArithmeticException e){
+            System.out.println("can't divide by zero");
         }
     }
 }
