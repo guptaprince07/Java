@@ -126,21 +126,60 @@ import java.util.*;
 //     }
 // }
 
+// class error{
+//      static int div(int a,int b)throws ArithmeticException{
+//         return a/b;
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+
+//         try{
+//             int res=div(a, b);
+//             System.out.println("result is: "+res);
+//         }
+//         catch(ArithmeticException e){
+//             System.out.println("can't divide by zero");
+//         }
+//     }
+// }
+
+// class error{
+//      static void method3(){
+//             int res=10/0;
+//             System.out.print(res);
+//         }
+//         static void method2(){
+//             method3();
+//         }
+//         static void method1(){
+//             method2();
+//         }
+//     public static void main(String[] args) {
+//         try{
+//             method1();
+//         }
+//         catch(ArithmeticException e){
+//             System.out.println("Exception handled in main");
+//         }
+//     }
+// }
+
 class error{
-     static int div(int a,int b)throws ArithmeticException{
-        return a/b;
-    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-
+        int no=sc.nextInt();
         try{
-            int res=div(a, b);
-            System.out.println("result is: "+res);
+            int res=0;
+            if(no<0){
+                throw new IllegalArgumentException();
+            }
+            res+=no*no;
+            System.out.println("sq is: "+res);
         }
-        catch(ArithmeticException e){
-            System.out.println("can't divide by zero");
+        catch(IllegalArgumentException e){
+            System.out.println(("Number cannot be negative"));
         }
     }
 }
