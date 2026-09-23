@@ -2077,6 +2077,10 @@ class Main{
                 }
                 int sum=0;
                 for(Map.Entry<String,Integer>e:info.entrySet()){
+                        //e.getKey() and e.getValue() se key and value pair print karwa sakte
+                        //containsKey() to check wheather a key exists or not
+                        //remove() to delete
+                        //keySet() returns all key pairs in a set
                         sum+=e.getValue();
                 }
                 System.out.println("the sum is:"+sum);
