@@ -2065,24 +2065,39 @@ import java.util.*;
 //         }
 // }
 
-class Main{
-        public static void main(String[] args) {
-                Scanner sc=new Scanner(System.in);
-                HashMap<String,Integer>info=new HashMap<>();
-                int n=sc.nextInt();
-                for(int i=0;i<n;i++){
-                        String name=sc.next();
-                        int marks=sc.nextInt();
-                        info.put(name,marks);
-                }
-                int sum=0;
-                for(Map.Entry<String,Integer>e:info.entrySet()){
-                        //e.getKey() and e.getValue() se key and value pair print karwa sakte
-                        //containsKey() to check wheather a key exists or not
-                        //remove() to delete
-                        //keySet() returns all key pairs in a set
-                        sum+=e.getValue();
-                }
-                System.out.println("the sum is:"+sum);
+// class Main{
+//         public static void main(String[] args) {
+//                 Scanner sc=new Scanner(System.in);
+//                 HashMap<String,Integer>info=new HashMap<>();
+//                 int n=sc.nextInt();
+//                 for(int i=0;i<n;i++){
+//                         String name=sc.next();
+//                         int marks=sc.nextInt();
+//                         info.put(name,marks);
+//                 }
+//                 int sum=0;
+//                 for(Map.Entry<String,Integer>e:info.entrySet()){
+//                         //e.getKey() and e.getValue() se key and value pair print karwa sakte
+//                         //containsKey() to check wheather a key exists or not
+//                         //remove() to delete
+//                         //keySet() returns all key pairs in a set
+//                         sum+=e.getValue();
+//                 }
+//                 System.out.println("the sum is:"+sum);
+//         }
+// }
+
+//q-1502. Can Make Arithmetic Progression From Sequence
+class Solution {
+    public boolean canMakeArithmeticProgression(int[] arr) {
+     Arrays.sort(arr);
+     int diff=arr[1]-arr[0];
+     int n=arr.length;
+     for(int i=2;i<n;i++){
+        if(arr[i]-arr[i-1]!=diff){
+            return false;
         }
+     }   
+     return true;
+    }
 }
