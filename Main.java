@@ -2088,16 +2088,28 @@ import java.util.*;
 // }
 
 //q-1502. Can Make Arithmetic Progression From Sequence
+// class Solution {
+//     public boolean canMakeArithmeticProgression(int[] arr) {
+//      Arrays.sort(arr);
+//      int diff=arr[1]-arr[0];
+//      int n=arr.length;
+//      for(int i=2;i<n;i++){
+//         if(arr[i]-arr[i-1]!=diff){
+//             return false;
+//         }
+//      }   
+//      return true;
+//     }
+// }
+
+//q-2485. find the pivot integer
 class Solution {
-    public boolean canMakeArithmeticProgression(int[] arr) {
-     Arrays.sort(arr);
-     int diff=arr[1]-arr[0];
-     int n=arr.length;
-     for(int i=2;i<n;i++){
-        if(arr[i]-arr[i-1]!=diff){
-            return false;
+    public int pivotInteger(int n) {
+        int sum=n*(n+1)/2;
+        int root=(int)Math.sqrt(sum);
+        if(root*root==sum){
+            return root;
         }
-     }   
-     return true;
+        return -1;
     }
 }
