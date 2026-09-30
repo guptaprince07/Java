@@ -1385,14 +1385,16 @@ import java.util.*;
 //     }
 // }
 
-class practice{
-    public static void main(String[] args) {
-        LinkedList<Integer>lkd=new LinkedList<>();
-        lkd.add(1);
-        lkd.add(3);
-        lkd.add(4);
-        lkd.addFirst(174);
-        lkd.addLast(69);
-        System.out.println(lkd);
-    }
-}
+// class practice{
+//     public static void main(String[] args) {
+//         LinkedList<Integer>lkd=new LinkedList<>();
+//         lkd.add(1);
+//         lkd.add(3);
+//         lkd.add(4);
+//         lkd.addFirst(174);
+//         lkd.addLast(69);
+//         System.out.println(lkd.indexOf(4));
+//         System.out.println(lkd);
+//     }
+// }
+
