@@ -2113,3 +2113,11 @@ import java.util.*;
 //         return -1;
 //     }
 // }
+
+// class Solution {
+//     public double myPow(double x, int n) {
+//         // if(n==0){return 1;}
+//         // if(x==0){return x;}
+//            return (double) Math.pow(x,n);
+//     }
+// }
