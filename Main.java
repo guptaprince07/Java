@@ -2152,9 +2152,6 @@ import java.util.*;
 //     }
 // }
 
-import java.util.HashSet;
-import java.util.Set;
-
 class Solution {
     public int arithmeticTriplets(int[] nums, int diff) {
         Set<Integer> seen = new HashSet<>();
