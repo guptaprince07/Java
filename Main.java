@@ -2130,24 +2130,24 @@ import java.util.*;
 //     }
 // }
 
-class Solution {
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        ArrayList<Integer>merge=new ArrayList<>();
-        for(int i:nums1){
-            merge.add(i);
-        }
-        for(int i:nums2){
-            merge.add(i);
-        }
-        int n=merge.size();
-        Collections.sort(merge);
-        if(n%2!=0){
-            return merge.get(n/2);
-        }
-        else{
-            int med1=merge.get((n/2)-1);
-            int med2=merge.get((n/2));
-            return (double) (med1+med2)/2;
-        }
-    }
-}
+// class Solution {
+//     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+//         ArrayList<Integer>merge=new ArrayList<>();
+//         for(int i:nums1){
+//             merge.add(i);
+//         }
+//         for(int i:nums2){
+//             merge.add(i);
+//         }
+//         int n=merge.size();
+//         Collections.sort(merge);
+//         if(n%2!=0){
+//             return merge.get(n/2);
+//         }
+//         else{
+//             int med1=merge.get((n/2)-1);
+//             int med2=merge.get((n/2));
+//             return (double) (med1+med2)/2;
+//         }
+//     }
+// }
