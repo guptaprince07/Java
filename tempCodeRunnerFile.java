@@ -1,11 +1,12 @@
 class practice{
     public static void main(String args[]){
-        int n=5;
-        for(int i=n;i>=1;i--){
-            for(int j=1;j<=i;j++){
-                System.out.print(j);
-            }
-            System.out.println();
-        }
+        StringBuilder name= new StringBuilder("Prince");
+        System.out.println(name);
+        System.out.println(name.charAt(4));
+        //insert function
+        name.insert(0,'S');
+        System.out.println(name);
+        name.insert(4,'B');
+        System.out.println(name);
     }
 }
