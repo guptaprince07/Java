@@ -2171,58 +2171,59 @@ import java.util.*;
 //     }
 // }
 
-class Student implements Comparable<Student> {
-    String name;
-    String college;
-    int rank;
+// class Student implements Comparable<Student> {
+//     String name;
+//     String college;
+//     int rank;
 
-    // Constructor
-    public Student(String name, String college, int rank) {
-        this.name = name;
-        this.college = college;
-        this.rank = rank;
-    }
+//     // Constructor
+//     public Student(String name, String college, int rank) {
+//         this.name = name;
+//         this.college = college;
+//         this.rank = rank;
+//     }
 
-    // 1. COMPARABLE: Defines natural ordering by rank (Ascending)
-    @Override
-    public int compareTo(Student other) {
-        return Integer.compare(this.rank, other.rank);
-    }
+//     // 1. COMPARABLE: Defines natural ordering by rank (Ascending)
+//     @Override
+//     public int compareTo(Student other) {
+//         return Integer.compare(this.rank, other.rank);
+//     }
 
-    @Override
-    public String toString() {
-        return "Student { name='" + name + "', college='" + college + "', rank=" + rank + " }";
-    }
-}
+//     @Override
+//     public String toString() {
+//         return "Student { name='" + name + "', college='" + college + "', rank=" + rank + " }";
+//     }
+// }
 
-// 2. COMPETITOR (Comparator): Defines custom ordering by name alphabetically
-class SortByName implements Comparator<Student> {
-    @Override
-    public int compare(Student s1, Student s2) {
-        return s1.name.compareTo(s2.name);
-    }
-}
+// // 2. COMPETITOR (Comparator): Defines custom ordering by name alphabetically
+// class SortByName implements Comparator<Student> {
+//     @Override
+//     public int compare(Student s1, Student s2) {
+//         return s1.name.compareTo(s2.name);
+//     }
+// }
 
-public class Main {
-    public static void main(String[] args) {
-        Student[] students = {
-            new Student("Rohan", "Chitkara University", 5),
-            new Student("Aman", "Chitkara University", 1),
-            new Student("Priya", "Chitkara University", 3)
-        };
+// public class Main {
+//     public static void main(String[] args) {
+//         Student[] students = {
+//             new Student("Rohan", "Chitkara University", 5),
+//             new Student("Aman", "Chitkara University", 1),
+//             new Student("Priya", "Chitkara University", 3)
+//         };
 
-        // --- Sorting using Comparable (by Rank) ---
-        Arrays.sort(students);
-        System.out.println("--- Sorted by Rank (Using Comparable) ---");
-        for (Student s : students) {
-            System.out.println(s);
-        }
+//         // --- Sorting using Comparable (by Rank) ---
+//         Arrays.sort(students);
+//         System.out.println("--- Sorted by Rank (Using Comparable) ---");
+//         for (Student s : students) {
+//             System.out.println(s);
+//         }
 
-        // --- Sorting using Comparator (by Name) ---
-        Arrays.sort(students, new SortByName());
-        System.out.println("\n--- Sorted by Name (Using Comparator) ---");
-        for (Student s : students) {
-            System.out.println(s);
-        }
-    }
-}
+//         // --- Sorting using Comparator (by Name) ---
+//         Arrays.sort(students, new SortByName());
+//         System.out.println("\n--- Sorted by Name (Using Comparator) ---");
+//         for (Student s : students) {
+//             System.out.println(s);
+//         }
+//     }
+// }
+
