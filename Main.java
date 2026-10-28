@@ -2227,25 +2227,25 @@ import java.util.*;
 //     }
 // }
 
-class Main{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int arr[][]=new int[3][3];
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
-        int n=arr.length;
-        int lefts=0;
-        int rights=0;
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                lefts+=arr[i][i];
-                rights+=arr[i][n-1-i];
-            }
-        }
-        System.out.println("left diagonal sum is: "+lefts);
-        System.out.println("right diagonal sum is: "+rights);
-    }
-}
+// class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int arr[][]=new int[3][3];
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int n=arr.length;
+//         int lefts=0;
+//         int rights=0;
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 lefts+=arr[i][i];
+//                 rights+=arr[i][n-1-i];
+//             }
+//         }
+//         System.out.println("left diagonal sum is: "+lefts);
+//         System.out.println("right diagonal sum is: "+rights);
+//     }
+// }
