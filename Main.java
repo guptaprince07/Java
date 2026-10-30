@@ -2249,3 +2249,9 @@ import java.util.*;
 //         System.out.println("right diagonal sum is: "+rights);
 //     }
 // }
+
+class Main{
+        public static void main(String[] args) {
+                
+        }
+}
