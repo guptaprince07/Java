@@ -1418,3 +1418,20 @@ import java.util.*;
 //         return grid[m-1][n-1];
 //     }
 // }
+
+//q-453
+class practice {
+    public int minMoves(int[] nums) {
+        int min=nums[0];
+        for(int i:nums){
+            if(i<min){
+                min=i;
+            }
+        }
+        int mo=0;
+        for(int i:nums){
+            mo+=i-min;
+        }
+        return mo;
+    }
+}
