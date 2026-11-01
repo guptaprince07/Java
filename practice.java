@@ -1420,18 +1420,31 @@ import java.util.*;
 // }
 
 //q-453
+// class practice {
+//     public int minMoves(int[] nums) {
+//         int min=nums[0];
+//         for(int i:nums){
+//             if(i<min){
+//                 min=i;
+//             }
+//         }
+//         int mo=0;
+//         for(int i:nums){
+//             mo+=i-min;
+//         }
+//         return mo;
+//     }
+// }
+
+//q-3190
 class practice {
-    public int minMoves(int[] nums) {
-        int min=nums[0];
+    public int minimumOperations(int[] nums) {
+        int min=0;
         for(int i:nums){
-            if(i<min){
-                min=i;
+            if(i%3!=0){
+                min++;
             }
         }
-        int mo=0;
-        for(int i:nums){
-            mo+=i-min;
-        }
-        return mo;
+        return min;
     }
 }
